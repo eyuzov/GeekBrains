@@ -16,31 +16,39 @@
 
     let menu = new Menu('my', 'my', [
       new MenuItem('/', 'Home'),
-      new subMenu('me', 'me', [
+      new SubMenu('/', 'Home-with-sub', 'me', 'me', [
         new MenuItem('/subPolicy', 'SubPolicy'),
-        new MenuItem('/subContacts', 'SubContacts'),
+        new SubMenu('/about-with-sub', 'About-with-sub', 'me', 'me', [
+          new MenuItem('/subPolicy', 'SubPolicy'),
+          new MenuItem('/subContacts', 'SubContacts'),
+          new SubMenu('/blog-with-sub', 'Blog-with-sub', 'me', 'me', [
+            new MenuItem('/subPolicy', 'SubPolicy'),
+            new MenuItem('/subContacts', 'SubContacts'),
+            new MenuItem('/subBlog', 'SubBlog'),
+          ]),
+        ]),
         new MenuItem('/subBlog', 'SubBlog'),
       ]),
       new MenuItem('/about', 'About'),
-      new subMenu('me', 'me', [
+      new SubMenu('/about-with-sub', 'About-with-sub', 'me', 'me', [
         new MenuItem('/subPolicy', 'SubPolicy'),
         new MenuItem('/subContacts', 'SubContacts'),
         new MenuItem('/subBlog', 'SubBlog'),
       ]),
       new MenuItem('/contacts', 'Contacts'),
-      new subMenu('me', 'me', [
+      new SubMenu('/contacts-with-sub', 'Contacts-with-sub', 'me', 'me', [
         new MenuItem('/subPolicy', 'SubPolicy'),
         new MenuItem('/subContacts', 'SubContacts'),
         new MenuItem('/subBlog', 'SubBlog'),
       ]),
       new MenuItem('/blog', 'Blog'),
-      new subMenu('me', 'me', [
+      new SubMenu('/blog-with-sub', 'Blog-with-sub', 'me', 'me', [
         new MenuItem('/subPolicy', 'SubPolicy'),
         new MenuItem('/subContacts', 'SubContacts'),
         new MenuItem('/subBlog', 'SubBlog'),
       ]),
       new MenuItem('/policy', 'Policy'),
-      new subMenu('me', 'me', [
+      new SubMenu('/policy-with-sub', 'Policy-with-sub', 'me', 'me', [
         new MenuItem('/subPolicy', 'SubPolicy'),
         new MenuItem('/subContacts', 'SubContacts'),
         new MenuItem('/subBlog', 'SubBlog'),

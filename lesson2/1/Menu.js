@@ -8,10 +8,8 @@ class Menu {
   render() {
     let result = `<ul class="${this.className}" id="${this.id}">`;
     for (let i = 0; i < this.items.length; i++) {
-      if (this.items[i] instanceof MenuItem) {
-        result += this.items[i].renderItem();
-      } else if (this.items[i] instanceof subMenu){
-        result += this.items[i].renderSubMenu();
+      if (this.items[i] instanceof MenuItem || this.items[i] instanceof SubMenu) {
+        result += this.items[i].render();
       }
     }
     result += '</ul>';
