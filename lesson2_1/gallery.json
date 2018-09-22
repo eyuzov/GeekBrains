@@ -1,12 +1,27 @@
 {
   "img1": {
     "alt": "Some alt",
-    "src": "img/1.jpg",
-    "link": "ya.ru"
+    "src": "img/mini/1.jpg",
+    "link": "img/full/1.jpg"
   },
   "img2": {
     "alt": "Some alt",
-    "src": "img/2.jpg",
-    "link": "google.ru"
+    "src": "img/mini/2.jpg",
+    "link": "img/full/2.jpg"
+  },
+  "img3": {
+    "alt": "Some alt",
+    "src": "img/mini/3.png",
+    "link": "img/full/3.png"
+  },
+  "img4": {
+    "alt": "Some alt",
+    "src": "img/mini/4.jpg",
+    "link": "img/full/4.jpg"
+  },
+  "img5": {
+    "alt": "Some alt",
+    "src": "img/mini/5.jpg",
+    "link": "img/full/5.jpg"
   }
 }
