@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="data"></div>
+
+<script>
+  window.onload = () => {
+    let block = document.getElementById('data');
+    fetch('gallery.json')
+      .then(result => {
+        return result.json();
+      })
+      .then(data => {
+        for (let a in data) {
+          block.innerHTML += `<a href=${data[a].link} target="_blank"><img src=${data[a].src} alt=${data[a].alt}></a>`;
+        }
+      })
+  }
+</script>
+</body>
+</html>
