@@ -1,0 +1,12 @@
+{
+  "img1": {
+    "alt": "Some alt",
+    "src": "img/1.jpg",
+    "link": "ya.ru"
+  },
+  "img2": {
+    "alt": "Some alt",
+    "src": "img/2.jpg",
+    "link": "google.ru"
+  }
+}

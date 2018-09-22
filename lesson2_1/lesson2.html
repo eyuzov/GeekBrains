@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="data">
+    <!--<a href="" id="big"><img src="" alt="" id="img"></a>-->
+</div>
+<button id="getbtn">Async get</button>
+<script>
+  window.onload = () => {
+    //ES6
+    let btn = document.getElementById('getbtn');
+    let block = document.getElementById('data');
+    let big = document.getElementById('big');
+    let img = document.getElementById('img');
+
+    fetch('gallery.json')
+      .then(result => { // результат фетча
+        console.log(result);
+        return result.json(); // распарсенный json
+      })
+      .then(data => { //  расспарсенного и преобразованного в объект json
+        console.log(data);
+
+        for (let a in data) {
+          block.innerHTML += `<a href="" id="big"><img src=${data[a].src} alt="" id="img"></a>`
+
+
+        }
+
+        // btn.addEventListener('click', () => block.innerHTML = `Number ${data.img1.src} (${data.description})`);
+        btn.addEventListener('click', () => block.innerHTML = `Number ${data.img1.src} (${data.description})`);
+      })
+      .catch(error => console.log(error));
+  }
+</script>
+</body>
+</html>
