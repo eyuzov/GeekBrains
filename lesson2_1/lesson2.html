@@ -5,36 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<div id="data">
-    <!--<a href="" id="big"><img src="" alt="" id="img"></a>-->
-</div>
-<button id="getbtn">Async get</button>
+<div id="data"></div>
+
 <script>
   window.onload = () => {
-    //ES6
-    let btn = document.getElementById('getbtn');
     let block = document.getElementById('data');
-    let big = document.getElementById('big');
-    let img = document.getElementById('img');
-
     fetch('gallery.json')
-      .then(result => { // результат фетча
-        console.log(result);
-        return result.json(); // распарсенный json
+      .then(result => {
+        return result.json();
       })
-      .then(data => { //  расспарсенного и преобразованного в объект json
-        console.log(data);
-
+      .then(data => {
         for (let a in data) {
-          block.innerHTML += `<a href="" id="big"><img src=${data[a].src} alt="" id="img"></a>`
-
-
+          block.innerHTML += `<a href=${data[a].link} target="_blank"><img src=${data[a].src} alt=${data[a].alt}></a>`;
         }
-
-        // btn.addEventListener('click', () => block.innerHTML = `Number ${data.img1.src} (${data.description})`);
-        btn.addEventListener('click', () => block.innerHTML = `Number ${data.img1.src} (${data.description})`);
       })
-      .catch(error => console.log(error));
   }
 </script>
 </body>
