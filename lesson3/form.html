@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .red-border{
+            border: 1px solid red;
+        }
+    </style>
+
+</head>
+
+<body>
+<form action="#" method="post" id="myform">
+    <div><label for="username">Your name</label><input type="text" id="username"></div>
+    <div><label for="phone">Your phone</label><input type="text" id="phone" placeholder="+7(000)000-0000"></div>
+    <div><label for="mail">Your mail</label><input type="text" id="mail"></div>
+    <div><label for="sometext">Some text</label><input type="text" id="sometext"></div>
+    <div>
+        <button type="submit" id="btn">Validate form</button>
+    </div>
+</form>
+<div id="mess"></div>
+<script src="validate.js"></script>
+<script>
+  window.onload = () => {
+    document.getElementById('myform').addEventListener('submit', event => {
+      event.preventDefault();
+      let userName = document.getElementById('username');
+      let phone = document.getElementById('phone');
+      let mail = document.getElementById('mail');
+
+      let val = new Validate(userName, phone, mail);
+      val.init();
+
+    })
+  }
+
+</script>
+</body>
+
+</html>
