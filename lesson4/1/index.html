@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        #container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            border: 0;
+        }
+
+        .inactive-tab {
+            background: seagreen;
+            color: white;
+        }
+
+        .tab:hover, .tab-bottom:hover {
+            cursor: pointer;
+        }
+
+        .tab {
+            border-radius: 20px 20px 0 0;
+            width: 150px;
+            height: 50px;
+            border: 3px double seagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .active-tab {
+            background: white;
+            border: 3px double seagreen;
+            border-bottom: 3px double white;
+        }
+
+        .content-top {
+            z-index: -1;
+            width: 904px;
+            height: auto;
+            border: 3px double seagreen;
+            position: relative;
+            top: -3px;
+            padding: 10px;
+        }
+
+        .content-bottom {
+            z-index: -1;
+            width: 904px;
+            height: auto;
+            border: 3px double seagreen;
+            position: relative;
+            left: -3px;
+            padding: 10px;
+        }
+
+        .inactive-tab-bottom {
+            background: seagreen;
+            color: white;
+        }
+
+        .tab-bottom {
+            border-radius: 20px 0 0 20px;
+            width: 150px;
+            height: 50px;
+            border: 3px double seagreen;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .active-tab-bottom {
+            background: white;
+            border: 3px double seagreen;
+            border-right: 3px double white;
+        }
+
+        #container-vert {
+            display: flex;
+        }
+
+    </style>
+
+</head>
+<body>
+<div id="container">
+    <div id="one" class="tab">one</div>
+    <div id="two" class="tab">two</div>
+    <div id="three" class="tab">three</div>
+</div>
+<div class="content-1 content-top">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium debitis distinctio facere necessitatibus
+        omnis
+        perferendis quos tenetur voluptatum. Ab aut dolor, earum libero magni saepe. Aliquid blanditiis fugit inventore
+        sequi sunt. Accusantium adipisci, aliquam aspernatur at beatae commodi culpa cumque debitis dolor dolorem earum
+        eligendi eum eveniet facilis fugit illo ipsa iste minus numquam officia officiis perferendis praesentium quidem
+        recusandae rem reprehenderit sed soluta sunt tempore totam unde ut, veniam voluptatem? A cumque, delectus
+        deserunt,
+        dignissimos dolor earum enim error exercitationem inventore neque nesciunt quam quas quibusdam quo, rerum
+        temporibus
+        velit? Alias corporis cumque delectus, deserunt ea enim error facere fugit illo maxime minus perspiciatis
+        praesentium provident saepe, sequi sint vitae! Blanditiis cumque esse id, itaque laudantium minus nobis non
+        porro?
+        Aliquid consequuntur deserunt dolorum iste odit saepe veniam? Adipisci earum fugit, minus repellat saepe
+        voluptate.
+        Aliquam aspernatur at cumque dignissimos ea eaque et iste itaque laboriosam libero nulla quas quasi qui
+        quibusdam
+        quidem rem sed sunt veritatis, voluptatem voluptatibus. Accusamus ad alias aut beatae consectetur consequatur
+        cum
+        cumque debitis dolorum ducimus eius et excepturi facere fuga fugit illum inventore iure magnam molestiae natus
+        necessitatibus nesciunt officiis, omnis perspiciatis quas quisquam ratione rem sunt ullam voluptate. Aliquid
+        dolorum
+        ex libero.
+    </p>
+</div>
+<div class="content-2 content-top">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aperiam, at cupiditate earum perferendis qui
+        repellat.
+        Aliquid blanditiis eos ex fuga libero maxime minima nisi, non odit quo ratione temporibus totam voluptate?
+        Adipisci
+        corporis deleniti eaque earum excepturi iste placeat qui rem sit unde? Ab consequuntur dicta exercitationem ipsa
+        labore nemo quam ratione rem sunt voluptates! Accusantium aperiam architecto consequatur cumque debitis,
+        delectus
+        distinctio doloribus earum eos esse et eveniet excepturi fugit illum impedit ipsum laboriosam modi nemo numquam
+        officiis omnis perferendis perspiciatis possimus praesentium quaerat qui quidem recusandae reprehenderit rerum
+        saepe
+        sit suscipit totam vel vitae voluptas voluptatem voluptatibus! Asperiores consectetur delectus ducimus
+        exercitationem hic id in incidunt iure labore laborum laudantium maiores, molestias, mollitia nemo neque non
+        obcaecati odio placeat possimus provident rerum similique voluptatibus voluptatum. Assumenda corporis distinctio
+        eaque enim iste magni, mollitia odio quis voluptas? Ab accusamus amet architecto at aut delectus deleniti dicta
+        dignissimos, dolore est ex expedita fuga fugiat fugit id illum in iure laboriosam maxime modi neque nihil odit
+        officia pariatur quaerat qui, quos repellendus rerum soluta tempore temporibus unde ut voluptatibus? Atque
+        corporis
+        deserunt eum excepturi in molestiae, nulla numquam porro provident, quaerat, quam repudiandae sequi sint tempore
+        unde vero voluptate! Culpa?</p>
+
+</div>
+<div class="content-3 content-top">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda commodi harum perspiciatis placeat
+        provident,
+        qui quibusdam quod recusandae. Autem corporis dolor facere labore numquam praesentium repudiandae similique
+        totam.
+        Distinctio earum exercitationem ipsam laborum praesentium quasi repellat tempora voluptatibus. Accusamus ad
+        animi
+        consectetur debitis est facilis itaque, molestiae, nobis officiis omnis provident quis ullam voluptatibus. Amet
+        architecto, assumenda, dicta dolor eius eligendi facere id impedit itaque laborum minima neque reiciendis rem
+        rerum,
+        ut voluptatibus voluptatum? A adipisci asperiores consectetur cupiditate debitis delectus dolorem ex, expedita
+        harum
+        impedit iusto magni obcaecati optio pariatur quos reiciendis similique velit! Ad assumenda dolor dolore
+        doloremque
+        ducimus esse eum explicabo facilis fugiat hic id impedit in ipsam libero magnam, necessitatibus, neque numquam
+        odit
+        perferendis sequi similique tempore tenetur, totam veniam voluptate voluptates voluptatibus! Accusamus adipisci
+        aperiam commodi consectetur consequatur debitis dignissimos facere id iusto maxime minima, nemo officia officiis
+        perferendis, perspiciatis quas quia quibusdam ratione repellat reprehenderit rerum similique sint soluta
+        temporibus
+        totam vel voluptatem voluptatum! A accusamus accusantium ad architecto aut beatae consequatur culpa cum cumque
+        debitis enim et excepturi explicabo facilis, id inventore ipsa ipsam ipsum itaque laudantium molestias non nulla
+        officia omnis possimus, quae quia quo rem suscipit totam ullam unde vitae voluptatum.</p>
+
+</div>
+
+<hr>
+
+
+<div id="container-vert">
+    <div class="tabs">
+        <div id="one-vert" class="tab-bottom">one</div>
+        <div id="two-vert" class="tab-bottom">two</div>
+        <div id="three-vert" class="tab-bottom">three</div>
+    </div>
+    <div class="content-1 content-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cumque dolore fuga id in incidunt labore
+            maxime modi nihil quae quod tempore temporibus unde voluptatibus voluptatum. Adipisci asperiores delectus
+            dolor eius eligendi enim hic, illum ipsa iste laborum molestiae, molestias natus necessitatibus odit omnis
+            reiciendis sequi soluta ullam velit voluptas! Ipsam laudantium magnam, maiores obcaecati quisquam quod
+            veniam voluptate? Cumque error labore laboriosam neque odit possimus quis saepe sed similique ut! Animi
+            debitis impedit, magnam minus perferendis quos voluptatem voluptatum! Ab animi architecto consectetur, culpa
+            cupiditate deserunt dolor dolorum eos ex explicabo facilis, minima minus molestiae mollitia odio perferendis
+            possimus quam sapiente suscipit totam ullam vero voluptate. Ab blanditiis dignissimos earum enim hic
+            praesentium recusandae repellat sequi soluta veritatis? A facere illo libero, maxime non nostrum odit quos
+            voluptate? A assumenda debitis doloribus ea eos impedit laudantium nisi nulla optio pariatur perspiciatis
+            quas quisquam repellat repudiandae sapiente tempore, totam unde velit veniam voluptas. Animi consequuntur
+            culpa cumque distinctio expedita facere fugiat hic itaque iure maxime, mollitia nisi nobis quaerat quam rem
+            soluta suscipit tempora voluptas! Accusamus aut, cupiditate dolorem doloremque eligendi et explicabo illum
+            nesciunt non quas quos, soluta! Consectetur consequuntur eaque impedit maiores pariatur quisquam!
+            Consequuntur cupiditate et ex.</p>
+    </div>
+    <div class="content-2 content-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur facilis fugit in incidunt
+            laboriosam perferendis praesentium sed! Autem consequatur fugiat maiores nemo, praesentium quaerat quia
+            repudiandae soluta totam ullam. Accusamus accusantium dolorum eius eos est, excepturi expedita harum id in
+            laborum magnam molestias nemo nihil nostrum perspiciatis porro quia, quibusdam ratione suscipit tempora
+            veritatis vitae voluptas. Ad aliquid architecto asperiores atque beatae consectetur dolorem eaque et
+            expedita fugiat id illo impedit inventore laudantium minima modi, nemo neque non nostrum nulla placeat
+            praesentium, quasi quidem quos ratione recusandae rem sapiente sit tempora, tempore ullam veniam
+            voluptatibus voluptatum! Ad assumenda at deleniti eum fugiat nesciunt optio, ratione reiciendis temporibus
+            ut vel vero? Atque dicta dolores itaque libero qui. Beatae numquam perferendis sed vero! Aliquam doloribus
+            odit officiis sint tempore. Alias, aliquid asperiores blanditiis cupiditate distinctio dolor doloremque esse
+            eum explicabo facilis fugiat incidunt ipsum nobis, odit pariatur provident quaerat, quasi quo recusandae
+            saepe totam vero vitae voluptas voluptatem voluptates! Animi, asperiores beatae consectetur corporis
+            deleniti dignissimos distinctio dolorem, doloremque eaque enim et laboriosam maiores modi molestias,
+            necessitatibus nemo nulla numquam possimus praesentium quae quasi quia reiciendis temporibus. Adipisci
+            architecto delectus, doloremque harum illum maiores modi nemo nostrum quasi quo rem voluptatibus?</p>
+    </div>
+    <div class="content-3 content-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae dolorem esse eveniet incidunt ipsa
+            molestias neque odit optio repellat unde, vel, veritatis vero voluptatibus voluptatum. Aliquam amet
+            architecto autem beatae blanditiis culpa, debitis dignissimos eaque earum fugit id illo in iusto labore,
+            molestias, nostrum officiis perspiciatis provident quaerat quam quo quos rem reprehenderit sequi sint soluta
+            totam velit veritatis vero voluptatibus? Consectetur culpa dolores illo laboriosam minus mollitia rerum?
+            Dignissimos eveniet minima nulla omnis saepe totam voluptatum? Corporis earum eos et, eveniet ex explicabo
+            illo ipsa maxime molestias neque obcaecati possimus qui quo quos recusandae repellendus similique velit!
+            Accusamus aperiam asperiores atque corporis, doloremque earum fuga impedit ipsum itaque nesciunt nobis
+            nostrum officia praesentium quis repellat? Alias cumque delectus excepturi necessitatibus quibusdam quidem
+            suscipit tempore ullam veniam voluptates? Amet consequuntur cum distinctio dolor dolorum ducimus, error in
+            labore laborum libero necessitatibus officia, optio placeat quas quidem quo reprehenderit saepe sequi unde
+            velit voluptate voluptatem voluptates voluptatibus. Cumque deleniti dicta error fugit iste nulla quo unde,
+            veniam! Aliquam aspernatur consectetur dicta dolor earum, eveniet nam! Accusantium, libero natus. Ad
+            blanditiis, distinctio eos inventore nisi reiciendis veritatis. Adipisci consequatur culpa dignissimos ex
+            exercitationem, facere molestias non? Alias cumque dignissimos dolorem provident!</p>
+    </div>
+</div>
+
+</body>
+
+
+<script src="jquery.min.js"></script>
+
+<script>
+  $(document).ready(() => {
+
+    $('.content-1').show();
+    $('#one').addClass('active-tab');
+
+    $('.content-2,.content-3').hide();
+    $('#two,#three').addClass('inactive-tab');
+
+    $('#one').click(() => {
+      $('.content-1').show();
+      $('#one').removeClass('inactive-tab');
+      $('#one').addClass('active-tab');
+      $('.content-2,.content-3').hide();
+      $('#two,#three').removeClass('active-tab');
+      $('#two,#three').addClass('inactive-tab');
+
+    });
+
+    $('#two').click(() => {
+      $('.content-2').show();
+      $('#two,#two-vert').removeClass('inactive-tab');
+      $('#two,#two-vert').addClass('active-tab');
+      $('.content-1,.content-3').hide();
+      $('#one,#three').removeClass('active-tab');
+      $('#one,#three').addClass('inactive-tab');
+
+    });
+
+    $('#three').click(() => {
+      $('.content-3').show();
+      $('#three').removeClass('inactive-tab');
+      $('#three').addClass('active-tab');
+      $('.content-1,.content-2').hide();
+      $('#one,#two').removeClass('active-tab');
+      $('#one,#two').addClass('inactive-tab');
+
+    })
+
+    // VERTICAL MENU
+
+    $('.content-1').show();
+    $('#one-vert').addClass('active-tab-bottom');
+
+    $('.content-2,.content-3').hide();
+    $('#two-vert,#three-vert').addClass('inactive-tab-bottom');
+
+    $('#one-vert').click(() => {
+      $('.content-1').show();
+      $('#one-vert').removeClass('inactive-tab-bottom');
+      $('#one-vert').addClass('active-tab-bottom');
+      $('.content-2,.content-3').hide();
+      $('#two-vert,#three-vert').removeClass('active-tab-bottom');
+      $('#two-vert,#three-vert').addClass('inactive-tab-bottom');
+
+    });
+
+    $('#two-vert').click(() => {
+      $('.content-2').show();
+      $('#two-vert').removeClass('inactive-tab-bottom');
+      $('#two-vert').addClass('active-tab-bottom');
+      $('.content-1,.content-3').hide();
+      $('#one-vert,#three-vert').removeClass('active-tab-bottom');
+      $('#one-vert,#three-vert').addClass('inactive-tab-bottom');
+
+    });
+
+    $('#three-vert').click(() => {
+      $('.content-3').show();
+      $('#three-vert').removeClass('inactive-tab-bottom');
+      $('#three-vert').addClass('active-tab-bottom');
+      $('.content-1,.content-2').hide();
+      $('#one-vert,#two-vert').removeClass('active-tab-bottom');
+      $('#one-vert,#two-vert').addClass('inactive-tab-bottom');
+
+    })
+
+  })
+
+</script>
+
+</html>
