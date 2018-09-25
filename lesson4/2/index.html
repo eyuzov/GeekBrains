@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #list{
+            border-radius: 10px;
+            height: 40px;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+<form action="#">
+    <select name="LIST" id="list">
+
+    </select>
+
+</form>
+</body>
+<script src="list.js"></script>
+<script>
+  window.onload = () => {
+    let list = document.getElementById('list');
+    let optionList = new List(list);
+    optionList.renderList();
+  }
+
+</script>
+
+</html>
