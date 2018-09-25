@@ -176,7 +176,7 @@
         <div id="two-vert" class="tab-bottom">two</div>
         <div id="three-vert" class="tab-bottom">three</div>
     </div>
-    <div class="content-1 content-bottom">
+    <div class="content-1-bottom content-bottom">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, cumque dolore fuga id in incidunt labore
             maxime modi nihil quae quod tempore temporibus unde voluptatibus voluptatum. Adipisci asperiores delectus
             dolor eius eligendi enim hic, illum ipsa iste laborum molestiae, molestias natus necessitatibus odit omnis
@@ -193,7 +193,7 @@
             nesciunt non quas quos, soluta! Consectetur consequuntur eaque impedit maiores pariatur quisquam!
             Consequuntur cupiditate et ex.</p>
     </div>
-    <div class="content-2 content-bottom">
+    <div class="content-2-bottom content-bottom">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consectetur facilis fugit in incidunt
             laboriosam perferendis praesentium sed! Autem consequatur fugiat maiores nemo, praesentium quaerat quia
             repudiandae soluta totam ullam. Accusamus accusantium dolorum eius eos est, excepturi expedita harum id in
@@ -210,7 +210,7 @@
             necessitatibus nemo nulla numquam possimus praesentium quae quasi quia reiciendis temporibus. Adipisci
             architecto delectus, doloremque harum illum maiores modi nemo nostrum quasi quo rem voluptatibus?</p>
     </div>
-    <div class="content-3 content-bottom">
+    <div class="content-3-bottom content-bottom">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus beatae dolorem esse eveniet incidunt ipsa
             molestias neque odit optio repellat unde, vel, veritatis vero voluptatibus voluptatum. Aliquam amet
             architecto autem beatae blanditiis culpa, debitis dignissimos eaque earum fugit id illo in iusto labore,
@@ -275,37 +275,37 @@
 
     // VERTICAL MENU
 
-    $('.content-1').show();
+    $('.content-1-bottom').show();
     $('#one-vert').addClass('active-tab-bottom');
 
-    $('.content-2,.content-3').hide();
+    $('.content-2-bottom,.content-3-bottom').hide();
     $('#two-vert,#three-vert').addClass('inactive-tab-bottom');
 
     $('#one-vert').click(() => {
-      $('.content-1').show();
+      $('.content-1-bottom').show();
       $('#one-vert').removeClass('inactive-tab-bottom');
       $('#one-vert').addClass('active-tab-bottom');
-      $('.content-2,.content-3').hide();
+      $('.content-2-bottom,.content-3-bottom').hide();
       $('#two-vert,#three-vert').removeClass('active-tab-bottom');
       $('#two-vert,#three-vert').addClass('inactive-tab-bottom');
 
     });
 
     $('#two-vert').click(() => {
-      $('.content-2').show();
+      $('.content-2-bottom').show();
       $('#two-vert').removeClass('inactive-tab-bottom');
       $('#two-vert').addClass('active-tab-bottom');
-      $('.content-1,.content-3').hide();
+      $('.content-1-bottom,.content-3-bottom').hide();
       $('#one-vert,#three-vert').removeClass('active-tab-bottom');
       $('#one-vert,#three-vert').addClass('inactive-tab-bottom');
 
     });
 
     $('#three-vert').click(() => {
-      $('.content-3').show();
+      $('.content-3-bottom').show();
       $('#three-vert').removeClass('inactive-tab-bottom');
       $('#three-vert').addClass('active-tab-bottom');
-      $('.content-1,.content-2').hide();
+      $('.content-1-bottom,.content-2-bottom').hide();
       $('#one-vert,#two-vert').removeClass('active-tab-bottom');
       $('#one-vert,#two-vert').addClass('inactive-tab-bottom');
 
