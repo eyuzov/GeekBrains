@@ -19,7 +19,7 @@ class Feedback {
   }
 
   _renderRow(rec) {
-    let frame = $('<div class="feedback-body"></div>');
+    let frame = $(`<div class="feedback-body" data-id=${rec.id} ></div>`);
     let author = $(`<span class="author">${rec.author}</span>`);
     let content = $(`<p class="feedback-content">${rec.text}</p>`);
     let removeBtn = $('<input type="button" value="REMOVE" id="remove-btn">');
