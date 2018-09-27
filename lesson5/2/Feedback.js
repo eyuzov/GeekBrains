@@ -22,17 +22,22 @@ class Feedback {
     let frame = $(`<div class="feedback-body" data-id=${rec.id} ></div>`);
     let author = $(`<span class="author">${rec.author}</span>`);
     let content = $(`<p class="feedback-content">${rec.text}</p>`);
-    let removeBtn = $('<input type="button" value="REMOVE" id="remove-btn">');
+    let removeBtn = $(`<input type="button" value="REMOVE" data-id=${rec.id} id="remove-btn">`);
     frame.append($(author));
     frame.append($(content));
     frame.append($(removeBtn));
     $(this.container).prepend($(frame));
-    $('#remove').on('click', (e) => this._removeFeedback(e));
+    $('#remove-btn').on('click', (e) => this._removeFeedback(e));
     console.log(this.feedArr);
   };
 
   _removeFeedback(e) {
-
+    this.feedArr.splice(e.target.dataset.id,1);
+    // $('[data-id='+id+']')
+    let remDiv = $(`[data-id=${e.target.dataset.id}]`);
+    remDiv.remove();
+    console.log($(`[data-id=${e.target.dataset.id}]`));
+    console.log(this.feedArr);
   }
 
   _addFeedback(e) {
