@@ -3,32 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <style>
-        .feedback-body{
-            border: 1px solid black;
+        body {
+            background-color: azure;
         }
-        #for-name{
+
+        #feed {
+            width: 1140px;
+            margin: auto;
+            background-color: darkblue;
+            color: white;
+        }
+
+        .title {
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .feedback-body {
+            border-bottom: 5px double white;
+        }
+
+        .feedback-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .author {
+            text-align: center;
+            font-size: 25px;
+            border-bottom: 1px dotted gray;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .content {
+            font-size: 17px;
+            margin: 0;
+            padding: 25px;
+        }
+
+        .content-approve {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        .fa-thumbs-up, .fa-thumbs-down {
+            font-size: 25px;
+        }
+
+        .fa-thumbs-down {
+            color: red;
+        }
+
+        .fa-thumbs-up {
+            color: green;
+        }
+
+        .approved {
+
+            border: 10px double gold;
+        }
+        .deny {
+
+            border: 10px double red;
+        }
+
+        #for-name {
             width: 200px;
             height: 30px;
         }
-        #for-text{
-            width: 400px;
-            height: 400px;
+
+        #for-text {
+            width: 700px;
+            height: 200px;
         }
-        .form{
+
+        #add-btn {
+            margin: 10px;
+            width: 200px;
+        }
+
+        .form {
             display: flex;
             flex-direction: column;
             align-items: center;
+        }
+        .warning-border{
+            border: 3px solid red;
+        }
+        .warning{
+           font-size: 30px;
+            color: red;
         }
     </style>
 </head>
 <body>
 <h1 class="title">Feedback</h1>
 <div id="feed"></div>
-<!--<form action="#" class="form">-->
-    <!--<input type="text" id="for-name">-->
-    <!--<input type="text" id="for-text">-->
-<!--</form>-->
 
 </body>
 <script src="jquery-3.3.1.js"></script>

@@ -4,51 +4,78 @@ class Feedback {
     this.container = container;
     this._init(this.source);
     this.feedArr = [];
-  }
-
-  _render() {
-
-    let frame = $('<div class="feedback-body"></div>');
-    let author = $('<span class="author"></span>');
-    let content = $('<p class="feedback-content"></p>');
-    frame.append($(author));
-    frame.append($(content));
-
-    frame.appendTo($(this.container));
-
+    this.id = 0;
   }
 
   _renderRow(rec) {
     let frame = $(`<div class="feedback-body" data-id=${rec.id} ></div>`);
-    let author = $(`<span class="author">${rec.author}</span>`);
-    let content = $(`<p class="feedback-content">${rec.text}</p>`);
+    let author = $(`<p class="author">${rec.author}</p>`);
+
+    let divContent = $(`<div class="feedback-content" data-contentId=${rec.id}></div>`);
+    let divApprDeny = $(`<div class="content-approve"></div>`);
+    let approve = $(`<i class="far fa-thumbs-up" id="fa-thumbs-up-${rec.id}" data-id=${rec.id}></i>`);
+    let deny = $(`<i class="far fa-thumbs-down"  id="fa-thumbs-down-${rec.id}" data-id=${rec.id}></i>`);
+    let content = $(`<p class="content">${rec.text}</p>`);
     let removeBtn = $(`<input type="button" value="REMOVE" data-id=${rec.id} id="remove-btn">`);
     frame.append($(author));
-    frame.append($(content));
-    frame.append($(removeBtn));
+    frame.append($(divApprDeny));
+    divApprDeny.append($(approve));
+    divApprDeny.append($(deny));
+    divContent.append($(divApprDeny));
+    divContent.append($(content));
+    divContent.append($(removeBtn));
+    frame.append($(divContent));
     $(this.container).prepend($(frame));
     $('#remove-btn').on('click', (e) => this._removeFeedback(e));
-    console.log(this.feedArr);
-  };
 
-  _removeFeedback(e) {
-    this.feedArr.splice(e.target.dataset.id,1);
-    // $('[data-id='+id+']')
-    let remDiv = $(`[data-id=${e.target.dataset.id}]`);
-    remDiv.remove();
-    console.log($(`[data-id=${e.target.dataset.id}]`));
-    console.log(this.feedArr);
+    $(`#fa-thumbs-up-${rec.id}`).click((e) => {
+      $(`[data-contentId=${+e.target.dataset.id}]`).removeClass('deny');
+      $(`[data-contentId=${+e.target.dataset.id}]`).toggleClass('approved');
+    });
+    $(`#fa-thumbs-down-${rec.id}`).click((e) => {
+      $(`[data-contentId=${+e.target.dataset.id}]`).removeClass('approved');
+      $(`[data-contentId=${+e.target.dataset.id}]`).toggleClass('deny');
+    });
   }
 
-  _addFeedback(e) {
+  _removeFeedback(e) {
+    let splice = this.feedArr.indexOf(this.feedArr.find(res => res.id === +e.target.dataset.id));
+    this.feedArr.splice(splice, 1);
+    let remDiv = $(`[data-id=${e.target.dataset.id}]`);
+    remDiv.remove();
+  }
+
+  _addFeedback() {
+    $('#for-text').removeClass('warning-border');
+    $('#for-name').removeClass('warning-border');
+    $('.warning').hide();
+    if ($('#for-name')[0].value === '' && $('#for-text')[0].value === '') {
+      $('.warning').text('Заполните Ваше Имя и Текст Сообщения');
+      $('#for-name').addClass('warning-border');
+      $('#for-text').addClass('warning-border');
+      $('.warning').show();
+      return;
+    }else if ($('#for-name')[0].value === '') {
+      $('.warning').text('Заполните Ваше Имя');
+      $('#for-name').addClass('warning-border');
+      $('.warning').show();
+      return;
+    } else if ($('#for-text')[0].value === '') {
+      $('.warning').text('Заполните текст сообщения');
+      $('#for-text').addClass('warning-border');
+      $('.warning').show();
+      return;
+    }
+
     let newRow = {
-      "id": this.feedArr.length,
+      "id": this.id,
       "author": $('#for-name')[0].value,
       "text": $('#for-text')[0].value,
     };
+    this.id += 1;
     this.feedArr.push(newRow);
     this._renderRow(newRow);
-    console.log(newRow);
+    $('#for-name')[0].value = $('#for-text')[0].value = '';
   }
 
   _init(source) {
@@ -58,28 +85,32 @@ class Feedback {
       .then(data => {
         for (let rec of data) {
           let newRow = {
-            "id": this.feedArr.length,
+            "id": this.id,
             "author": rec.author,
             "text": rec.text,
           };
+          this.id += 1;
           this.feedArr.push(newRow);
           this._renderRow(newRow);
         }
-
       });
 
     let form = $('<form class="form"></form>');
     let newAuthor = $('<input type="text" id="for-name">');
+    let warning = $('<p/>', {class: 'warning'});
     let newContent = $('<input type="text" id="for-text">');
     let addBtn = $('<input type="button" value="ADD" id="add-btn">');
     $(this.container).append('<hr>');
+    form.append(warning);
     form.append('Введите ваше имя');
     form.append(newAuthor);
+    $(warning).hide();
     form.append('Введите текст сообщения');
     form.append(newContent);
     form.append(addBtn);
     form.appendTo($(this.container));
-    $('#add-btn').on('click', (e) => this._addFeedback(e));
 
+    $('#add-btn').on('click', () => this._addFeedback());
   }
+
 }
