@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bower_components/jquery-ui/themes/base/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+          integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <style>
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 1200px;
+            margin: auto;
+            border: 1px solid #000;
+        }
+
+        .carousel-parent {
+            display: flex;
+            align-items: center;
+        }
+
+        #left, #right {
+            z-index: 1;
+            font-size: 80px;
+        }
+
+        .carousel {
+            z-index: 0;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            border: 5px double #000;
+            margin: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .parent {
+            border: 1px solid #000;
+            width: 30%;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <i class="fas fa-angle-double-left" id="left"></i>
+    <div class="carousel-parent">
+
+        <div id="parent-1" class="parent">
+            <div id="carousel-1" class="carousel">1</div>
+        </div>
+        <div id="parent-2" class="parent">
+            <div id="carousel-2" class="carousel">2</div>
+        </div>
+        <div id="parent-3" class="parent">
+            <div id="carousel-3" class="carousel">3</div>
+        </div>
+
+    </div>
+    <i class="fas fa-angle-double-right" id="right"></i>
+</div>
+
+
+<!--<div id="carousel-4" class="carousel">4</div>-->
+<!--<div id="carousel-5" class="carousel">5</div>-->
+
+</body>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script>
+  $(document).ready(() => {
+    $('.carousel-parent').draggable({
+      axis: 'x',
+      containment: '.container'
+    });
+    let a = 1;
+    $('.fa-angle-double-left').click(() => {
+
+      $(`#carousel-${a}`).remove();
+      a += 1;
+
+      $('#parent-1').append($(`#carousel-${a}`));
+
+      $(`#carousel-${a}`).remove();
+      a += 1;
+      $('#parent-2').append($(`#carousel-${a}`));
+
+      $(`#carousel-${a}`).remove();
+      a += 1;
+      $('#parent-3').append($(`#carousel-${a}`));
+      /*
+          $('#parent-2').remove($(`#carousel-${a}`))/!*.append($(`#carousel-${++a}`))*!/;
+
+          $('#parent-3').remove($(`#carousel-${a}`))/!*.append($(`#carousel-${++a}`))*!/;
+      */
+
+    })
+  })
+
+
+</script>
+</html>
