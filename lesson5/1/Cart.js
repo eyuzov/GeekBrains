@@ -103,7 +103,7 @@ class Cart {
       this._updateCart(find);
     } else {
       let $container = $(`div[data-product="${productId}"]`);
-      this.cartItems.splice(this.cartItems.indexOf(find),1);
+      this.cartItems.splice(this.cartItems.indexOf(find), 1);
       $container.remove();
     }
     this._renderSum(this.amount, this.countGoods);
