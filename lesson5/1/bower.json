@@ -1,7 +1,7 @@
 {
   "name": "cart",
   "description": "cart",
-  "main": "",
+  "main": "cart.js",
   "license": "MIT",
   "homepage": "",
   "ignore": [
