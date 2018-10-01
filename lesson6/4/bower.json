@@ -1,0 +1,14 @@
+{
+  "name": "cart",
+  "description": "cart",
+  "main": "cart.js",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
