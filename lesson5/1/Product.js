@@ -10,9 +10,14 @@ class Product {
 
   _render(container) {
     let $wrapper = $('<div/>', {
-      class: 'product'
+      class: 'product',
+      'data-id': this.id,
+      'data-price': this.price,
+      'data-name': this.title
     });
-    $('.product').draggable();
+    $('.product').draggable(
+      {revert: "valid"}
+    );
 
     let $img = $('<img/>', {
       src: this.img

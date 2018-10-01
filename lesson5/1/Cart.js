@@ -19,9 +19,18 @@ class Cart {
       class: 'cart-summary sum-price'
     });
     $(this.container).text('Корзина');
+    $(this.container).droppable({
+      accept: $('.product'),
+      drop: (event, ui) => {
+        this._addProduct(ui.draggable);
+        console.log(ui.draggable.data('id'));
+      }
+    })
+    ;
     $cartItemsDiv.appendTo($(this.container));
     $totalAmount.appendTo($(this.container));
     $totalPrice.appendTo($(this.container));
+
   }
 
   _renderItem(product) {
