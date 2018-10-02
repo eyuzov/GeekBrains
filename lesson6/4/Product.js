@@ -15,7 +15,7 @@ class Product {
       'data-price': this.price,
       'data-name': this.title
     });
-    $('.product').draggable(
+    $wrapper.draggable(
       {revert: "valid"}
     );
 
