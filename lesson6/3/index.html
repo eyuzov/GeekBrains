@@ -11,12 +11,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            width: 1200px;
             margin: auto;
             border: 1px solid #000;
         }
 
-        .carousel-parent {
+        #carousel-parent {
             display: flex;
             align-items: center;
         }
@@ -34,7 +33,6 @@
             border: 5px double #000;
             margin: 10px;
             box-sizing: border-box;
-            display: flex;
             align-items: center;
             justify-content: center;
             color: white;
@@ -44,6 +42,12 @@
             border: 1px solid #000;
             width: 30%;
         }
+
+        .center{
+            width: 150px;
+            height: 70px;
+            border: 10px dashed darkblue;
+        }
     </style>
 </head>
 <body>
@@ -51,58 +55,22 @@
 
 <div class="container">
     <i class="fas fa-angle-double-left" id="left"></i>
-    <div class="carousel-parent">
+    <div id="carousel-parent">
 
-        <div id="parent-1" class="parent">
-            <div id="carousel-1" class="carousel">1</div>
-        </div>
-        <div id="parent-2" class="parent">
-            <div id="carousel-2" class="carousel">2</div>
-        </div>
-        <div id="parent-3" class="parent">
-            <div id="carousel-3" class="carousel">3</div>
-        </div>
 
     </div>
     <i class="fas fa-angle-double-right" id="right"></i>
 </div>
 
 
-<!--<div id="carousel-4" class="carousel">4</div>-->
-<!--<div id="carousel-5" class="carousel">5</div>-->
-
 </body>
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="main.js"></script>
 <script>
   $(document).ready(() => {
-    $('.carousel-parent').draggable({
-      axis: 'x',
-      containment: '.container'
-    });
-    let a = 1;
-    $('.fa-angle-double-left').click(() => {
-
-      $(`#carousel-${a}`).remove();
-      a += 1;
-
-      $('#parent-1').append($(`#carousel-${a}`));
-
-      $(`#carousel-${a}`).remove();
-      a += 1;
-      $('#parent-2').append($(`#carousel-${a}`));
-
-      $(`#carousel-${a}`).remove();
-      a += 1;
-      $('#parent-3').append($(`#carousel-${a}`));
-      /*
-          $('#parent-2').remove($(`#carousel-${a}`))/!*.append($(`#carousel-${++a}`))*!/;
-
-          $('#parent-3').remove($(`#carousel-${a}`))/!*.append($(`#carousel-${++a}`))*!/;
-      */
-
-    })
-  })
+    let carousel = new Carousel('#carousel-parent');
+  });
 
 
 </script>
