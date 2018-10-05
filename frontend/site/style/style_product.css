@@ -148,6 +148,9 @@
   border-right: none;
   background-color: #fff;
 }
+.header-left form {
+  display: flex;
+}
 .header-left input {
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
@@ -173,13 +176,16 @@
   text-align: right;
 }
 .header-left button:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .header-right {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
+}
+.header-right a:hover {
+  cursor: pointer;
 }
 .header-right button {
   background-color: #f16d7f;
@@ -193,7 +199,7 @@
   margin-left: 25px;
 }
 .header-right button:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   background-color: #ffffff;
   color: #f16d7f;
@@ -280,12 +286,40 @@
   border-right: none;
   background-color: #fff;
 }
+.flex {
+  top: 58px;
+  left: -100px;
+}
+.flex .triangle {
+  left: 125px;
+}
 .flex1 {
   top: 58px;
-  left: -600px;
+  left: -174px;
 }
 .flex1 .triangle {
-  left: 650px;
+  left: 200px;
+}
+.flex2 {
+  top: 58px;
+  left: -272px;
+}
+.flex2 .triangle {
+  left: 320px;
+}
+.flex3 {
+  top: 58px;
+  left: -403px;
+}
+.flex3 .triangle {
+  left: 450px;
+}
+.flex4 {
+  top: 58px;
+  left: -515px;
+}
+.flex4 .triangle {
+  left: 560px;
 }
 /*********************SECTION START**********************************/
 .section {
@@ -371,11 +405,12 @@
   line-height: 54px;
   text-align: center;
   padding: 0 10px;
+  margin-top: 1px;
 }
 .subscribe {
   background-color: #f16d7f;
   width: 104px;
-  height: 46px;
+  height: 50px;
   border-bottom-right-radius: 70px;
   border-top-right-radius: 70px;
   color: #ffffff;
@@ -385,7 +420,7 @@
   text-align: center;
 }
 .subscribe:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
   color: #f16d7f;
   background-color: #ffffff;
@@ -551,7 +586,7 @@ body {
   height: 100%;
 }
 .slider_content a:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 .slider_content a {
@@ -725,7 +760,7 @@ body {
   margin-top: 25px;
 }
 .add_to_cart button:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
   background-color: #ef5b70;
   color: #ffffff;
 }
@@ -787,7 +822,7 @@ body {
   text-decoration: none;
 }
 .hover:hover {
-  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
 }
 .hover:hover img {
   filter: brightness(50%);
