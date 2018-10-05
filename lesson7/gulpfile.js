@@ -10,7 +10,7 @@ let gulp = require('gulp'),
   cssMin = require('gulp-csso'),
   babel = require('gulp-babel'),
   pug = require('gulp-pug'),
-  compress_images = require('compress-images');
+  imagemin = require('gulp-imagemin');
 
 const paths = {
   devHtml: 'site/**/*.html',
@@ -100,16 +100,9 @@ gulp.task('pug:watch', () => {
 });
 
 gulp.task('minImgs', () => {
-  return compress_images(paths.devImgs, paths.projectImgs, {
-      compress_force: false,
-      statistic: true,
-      autoupdate: true
-    }, false,
-    {jpg: {engine: 'mozjpeg', command: ['-quality', '60']}},
-    {png: {engine: 'pngquant', command: ['--quality=20-50']}},
-    {svg: {engine: 'svgo', command: '--multipass'}},
-    {gif: {engine: 'gifsicle', command: ['--colors', '64', '--use-col=web']}}, function () {
-    })
+  return gulp.src(paths.devImgs)
+    .pipe(imagemin())
+    .pipe(gulp.dest(paths.projectImgs))
 });
 
 
