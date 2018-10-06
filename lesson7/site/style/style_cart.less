@@ -89,11 +89,15 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid #eaeaea;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   & input {
     width: 54px;
     height: 30px;
     text-align: center;
+  }
+  & .fa-times-circle:hover {
+    cursor: pointer;
+    color: red;
   }
 }
 
@@ -119,6 +123,11 @@ body {
 
 .product-view {
   display: flex;
+  width: max-content;
+  &:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
 }
 
 .preview {
@@ -131,6 +140,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-right: 10px;
   & h3 {
     font-weight: 400;
   }
@@ -172,8 +182,11 @@ body {
     height: 50px;
     text-transform: uppercase;
     &:hover {
-      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
       cursor: pointer;
+      color: #ffffff;
+      border-color: #f16d7f;
+      background-color: #f16d7f;
     }
   }
 }
@@ -202,6 +215,8 @@ body {
     width: 355px;
     height: 45px;
     margin-top: 23px;
+    padding: 10px;
+    font-size: 17px;
   }
   & button {
     border: 1px solid #eaeaea;
@@ -215,9 +230,11 @@ body {
     font-weight: 700;
     margin-top: 24px;
     &:hover {
-      box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
       cursor: pointer;
-
+      color: #ffffff;
+      border-color: #f16d7f;
+      background-color: #f16d7f;
     }
   }
 

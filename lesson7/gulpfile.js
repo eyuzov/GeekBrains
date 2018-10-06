@@ -106,4 +106,4 @@ gulp.task('minImgs', () => {
 });
 
 
-gulp.task('default', gulp.series('clean', gulp.parallel('html', 'less', 'minImgs', 'js:es6', 'js:babel', 'pug', 'less:watch', 'html:watch', 'js:watch', 'pug:watch', 'server')));
+gulp.task('default', gulp.series('clean', 'minImgs', gulp.parallel('html', 'less', 'js:es6', 'js:babel', 'pug', 'less:watch', 'html:watch', 'js:watch', 'pug:watch', 'server')));
