@@ -31,6 +31,7 @@ gulp.task('html', () => {
     .pipe(htmlMin({collapseWhitespace: true})) //Минификация html
     .pipe(gulp.dest(paths.project)); // Сохранение файла
 });
+
 gulp.task('less', () => {
   return gulp.src(paths.devLess)
     .pipe(less())

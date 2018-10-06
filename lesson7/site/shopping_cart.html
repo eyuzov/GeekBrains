@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style_cart.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -328,12 +329,13 @@
         <tr class="head">
             <td class="product">
                 <div class="product-view">
-                    <a href="product.html"><img src="images/9.png" alt="preview" class="preview"></a>
-                    <div class="prod-desc">
-                        <h3>Mango People T-shirt</h3>
-                        <p>Color: <span>Red</span><br>
-                            Size: <span>Xll</span></p>
-                    </div>
+                    <a href="product.html"><img src="images/9.png" alt="preview" class="preview">
+                        <div class="prod-desc">
+                            <h3>Mango People T-shirt</h3>
+                            <p>Color: <span>Red</span><br>
+                                Size: <span>Xll</span></p>
+                        </div>
+                    </a>
                 </div>
             </td>
             <td class="other other-details">$150</td>
@@ -345,12 +347,13 @@
         <tr class="head">
             <td class="product">
                 <div class="product-view">
-                    <a href="product.html"><img src="images/10.png" alt="preview" class="preview"></a>
-                    <div class="prod-desc">
-                        <h3>Mango People T-shirt</h3>
-                        <p>Color: <span>Red</span><br>
-                            Size: <span>Xll</span></p>
-                    </div>
+                    <a href="product.html"><img src="images/10.png" alt="preview" class="preview">
+                        <div class="prod-desc">
+                            <h3>Mango People T-shirt</h3>
+                            <p>Color: <span>Red</span><br>
+                                Size: <span>Xll</span></p>
+                        </div>
+                    </a>
                 </div>
             </td>
             <td class="other other-details">$150</td>
@@ -362,12 +365,13 @@
         <tr class="head">
             <td class="product">
                 <div class="product-view">
-                    <a href="product.html"><img src="images/13.png" alt="preview" class="preview"></a>
-                    <div class="prod-desc">
-                        <h3>Mango People T-shirt</h3>
-                        <p>Color: <span>Red</span><br>
-                            Size: <span>Xll</span></p>
-                    </div>
+                    <a href="product.html"><img src="images/13.png" alt="preview" class="preview">
+                        <div class="prod-desc">
+                            <h3>Mango People T-shirt</h3>
+                            <p>Color: <span>Red</span><br>
+                                Size: <span>Xll</span></p>
+                        </div>
+                    </a>
                 </div>
             </td>
             <td class="other other-details">$150</td>
@@ -391,7 +395,7 @@
     <div class="total">
         <div class="order">
             <h1>Shipping Adress</h1>
-            <form action="">
+            <form action="#">
                 <select name="country" id="country" class="input">
                     <option value="">1</option>
                     <option value="">2</option>
@@ -405,7 +409,7 @@
         <div class="order">
             <h1>coupon discount</h1>
             <p>Enter your coupon code if you have one</p>
-            <form action="">
+            <form action="#">
                 <input type="text" placeholder="coupon" class="input">
                 <button class="coupon">Apply coupon</button>
             </form>
@@ -415,7 +419,7 @@
             <h2>GRAND TOTAL <span> $900</span></h2>
             <div class="center">
                 <hr class="line">
-                <a href="checkout.html"><button class="proceed">proceed to checkout</button></a>
+                <button class="proceed">proceed to checkout</button>
             </div>
 
         </div>
@@ -431,15 +435,18 @@
         <figure class="section-left">
             <img src="images/foto.png" alt="foto">
             <div class="burhan-text">
-                <figcaption>
-                    <h4>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
-                        condimentum mattis neque sed pretium”</h4>
-                    <h5>Bin Burhan</h5>
-                    <h6>Dhaka, Bd</h6>
-                    <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
-                    <a href="#"> <img src="images/active_link.png" alt="link"></a>
-                    <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
-                </figcaption>
+                <figure>
+                    <figcaption>
+                        <h4>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                            Aliquam
+                            condimentum mattis neque sed pretium”</h4>
+                        <h5>Bin Burhan</h5>
+                        <h6>Dhaka, Bd</h6>
+                        <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
+                        <a href="#"> <img src="images/active_link.png" alt="link"></a>
+                        <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
+                    </figcaption>
+                </figure>
             </div>
         </figure>
         <img src="images/vert_line.png" alt="line">
@@ -526,10 +533,7 @@
 
     <div class="footer-bottom">
         <div class="container footer-bottom-flex">
-            <div class="copy">
-                <h6 id="year"></h6>
-            </div>
-
+            <div class="copy"></div>
             <div class="social">
                 <a href="#"><i class=" fab fa-facebook-square soc_icons_style"></i></a>
                 <a href="#"><i class=" fab fa-twitter-square soc_icons_style"></i></a>
@@ -544,12 +548,23 @@
 
 </footer>
 <!--********************FOOTER END*********************************-->
-</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script>
-  window.onload = () => {
-    let copy = new Copyright();
-  }
-
+    window.onload = () => {
+        let copy = new Copyright();
+        $('.proceed').on('click', () => {
+            location.href = 'checkout.html';
+        });
+    }
 </script>
+</body>
+
 </html>

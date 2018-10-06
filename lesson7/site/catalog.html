@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style_catalog.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -317,85 +318,39 @@
         <details>
             <summary class="s1">Category</summary>
             <ul class="list">
-                <a href="#">
-                    <li>Accessories</li>
-                </a>
-                <a href="#">
-                    <li>Bags</li>
-                </a>
-                <a href="#">
-                    <li>Denim</li>
-                </a>
-                <a href="#">
-                    <li>Hoodies & Sweatshirts</li>
-                </a>
-                <a href="#">
-                    <li>Jackets & Coats</li>
-                </a>
-                <a href="#">
-                    <li>Pants</li>
-                </a>
-                <a href="#">
-                    <li>Polos</li>
-                </a>
-                <a href="#">
-                    <li>Shirts</li>
-                </a>
-                <a href="#">
-                    <li>Shoes</li>
-                </a>
-                <a href="#">
-                    <li>Shorts</li>
-                </a>
-                <a href="#">
-                    <li>Sweaters & Knits</li>
-                </a>
-                <a href="#">
-                    <li>T-Shirts</li>
-                </a>
-                <a href="#">
-                    <li>Tanks</li>
-                </a>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Bags</a></li>
+                <li><a href="#">Denim</a></li>
+                <li><a href="#">Hoodies & Sweatshirts</a></li>
+                <li><a href="#">Jackets & Coats</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Shoes</a></li>
+                <li><a href="#">Shorts</a></li>
+                <li><a href="#">Sweaters & Knits</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Tanks</a></li>
             </ul>
         </details>
         <details>
             <summary class="s2">BRAND</summary>
             <ul class="list">
-                <a href="#">
-                    <li>list_1</li>
-                </a>
-                <a href="#">
-                    <li>list_2</li>
-                </a>
-                <a href="#">
-                    <li>list_3</li>
-                </a>
-                <a href="#">
-                    <li>list_4</li>
-                </a>
-                <a href="#">
-                    <li>list_5</li>
-                </a>
+                <li><a href="#">list_1</a></li>
+                <li><a href="#">list_2</a></li>
+                <li><a href="#">list_3</a></li>
+                <li><a href="#">list_4</a></li>
+                <li><a href="#">list_5</a></li>
             </ul>
         </details>
         <details>
             <summary class="s3">dESIGNER</summary>
             <ul class="list">
-                <a href="#">
-                    <li>list_1</li>
-                </a>
-                <a href="#">
-                    <li>list_2</li>
-                </a>
-                <a href="#">
-                    <li>list_3</li>
-                </a>
-                <a href="#">
-                    <li>list_4</li>
-                </a>
-                <a href="#">
-                    <li>list_5</li>
-                </a>
+                <li><a href="#">list_1</a></li>
+                <li><a href="#">list_2</a></li>
+                <li><a href="#">list_3</a></li>
+                <li><a href="#">list_4</a></li>
+                <li><a href="#">list_5</a></li>
             </ul>
         </details>
     </aside>
@@ -424,11 +379,20 @@
                     <label class="XXL"><input type="checkbox"> XXL</label>
                 </form>
             </div>
+            <!--<div class="catalog_top">-->
+            <!--<h4>pRICE</h4>-->
+            <!--<input type="range">-->
+            <!--</div>-->
             <div class="catalog_top">
                 <h4>pRICE</h4>
-                <input type="range">
-
+                <div id="slider-range"></div>
+                <div class="summ">
+                    <input type="text" id="amount-start" readonly>
+                    <input type="text" id="amount-end" readonly>
+                </div>
             </div>
+
+
             <div class="sorting">
                 <div class="sorting_text">
                     Sort By
@@ -453,7 +417,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/9.png" alt="">
+                    <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -464,7 +428,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/10.png" alt="">
+                    <div class="catalog_item"><img src="images/10.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -475,7 +439,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/3.png" alt="">
+                    <div class="catalog_item"><img src="images/3.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -486,7 +450,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/11.png" alt="">
+                    <div class="catalog_item"><img src="images/11.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -497,7 +461,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/8.png" alt="">
+                    <div class="catalog_item"><img src="images/8.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -509,7 +473,7 @@
             <div class="hover">
                 <a href="product.html">
 
-                    <div class="catalog_item"><img src="images/12.png" alt="">
+                    <div class="catalog_item"><img src="images/12.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -520,7 +484,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/6.png" alt="">
+                    <div class="catalog_item"><img src="images/6.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -531,7 +495,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/13.png" alt="">
+                    <div class="catalog_item"><img src="images/13.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -542,7 +506,7 @@
             </div>
             <div class="hover">
                 <a href="product.html">
-                    <div class="catalog_item"><img src="images/14.png" alt="">
+                    <div class="catalog_item"><img src="images/14.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
                     </div>
@@ -578,29 +542,27 @@
 
 
 </div>
-<!-----------------------------MAIN BOTTOM------------------------------->
+<!--*************************MAIN BOTTOM*************************-->
 <div class="main_bottom">
     <div class="container text_for_customer_flex">
         <div class="text_for_customer">
-            <img src="images/car.png" alt="">
+            <img src="images/car.png" alt="car">
             <h4>Free Delivery</h4>
             <h6>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</h6>
         </div>
         <div class="text_for_customer">
-            <img src="images/procent.png" alt="">
+            <img src="images/procent.png" alt="procent">
             <h4>Sales & discounts</h4>
             <h6>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</h6>
 
         </div>
         <div class="text_for_customer">
-            <img src="images/crown.png" alt="">
+            <img src="images/crown.png" alt="crown">
             <h4>Quality assurance</h4>
             <h6>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</h6>
         </div>
 
     </div>
-
-
 </div>
 
 
@@ -615,15 +577,18 @@
         <figure class="section-left">
             <img src="images/foto.png" alt="foto">
             <div class="burhan-text">
-                <figcaption>
-                    <h4>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
-                        condimentum mattis neque sed pretium”</h4>
-                    <h5>Bin Burhan</h5>
-                    <h6>Dhaka, Bd</h6>
-                    <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
-                    <a href="#"> <img src="images/active_link.png" alt="link"></a>
-                    <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
-                </figcaption>
+                <figure>
+                    <figcaption>
+                        <h4>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                            Aliquam
+                            condimentum mattis neque sed pretium”</h4>
+                        <h5>Bin Burhan</h5>
+                        <h6>Dhaka, Bd</h6>
+                        <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
+                        <a href="#"> <img src="images/active_link.png" alt="link"></a>
+                        <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
+                    </figcaption>
+                </figure>
             </div>
         </figure>
         <img src="images/vert_line.png" alt="line">
@@ -710,10 +675,7 @@
 
     <div class="footer-bottom">
         <div class="container footer-bottom-flex">
-            <div class="copy">
-                <h6 id="year"></h6>
-            </div>
-
+            <div class="copy"></div>
             <div class="social">
                 <a href="#"><i class=" fab fa-facebook-square soc_icons_style"></i></a>
                 <a href="#"><i class=" fab fa-twitter-square soc_icons_style"></i></a>
@@ -728,12 +690,35 @@
 
 </footer>
 <!--********************FOOTER END*********************************-->
-</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script>
-  window.onload = () => {
-    let copy = new Copyright();
-  }
 
+
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 500,
+        values: [52, 400],
+        slide: function (event, ui) {
+            $("#amount-start").val(`$ ${0 + ui.values[0]}`);
+            $("#amount-end").val(`$ ${0 + ui.values[1]}`);
+        }
+    });
+    $("#amount-start").val("$ " + $("#slider-range").slider("values", 0));
+    $("#amount-end").val("$ " + $("#slider-range").slider("values", 1));
+
+    window.onload = () => {
+        let copy = new Copyright();
+    }
 </script>
+</body>
+
 </html>

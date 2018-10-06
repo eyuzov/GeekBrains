@@ -33,7 +33,6 @@ body {
 }
 
 .before_main h3 {
-  font-family: Lato;
   color: #f16d7f;
   font-size: 24px;
   font-weight: 900;
@@ -58,7 +57,6 @@ body {
 }
 
 .up_page {
-  font-family: Lato;
   color: #636363;
   font-size: 14px;
   font-weight: 300;
@@ -67,8 +65,6 @@ body {
 }
 
 .curr_page {
-
-  font-family: Lato;
   color: #f16d7f;
   font-size: 14px;
   font-weight: 700;
@@ -122,11 +118,14 @@ body {
 }
 
 .product-view {
-  display: flex;
-  width: max-content;
-  &:hover {
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
+  & a {
+    display: flex;
+    width: max-content;
+    text-decoration: none;
+    &:hover {
+      filter: brightness(70%);
+      cursor: pointer;
+    }
   }
 }
 
@@ -141,6 +140,11 @@ body {
   flex-direction: column;
   justify-content: space-around;
   padding-right: 10px;
+  color: #222222;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
   & h3 {
     font-weight: 400;
   }

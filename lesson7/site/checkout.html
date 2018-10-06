@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/checkout.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 
 <body>
@@ -319,7 +320,7 @@
         <div class="reg">
             <h3>Check as a guest or register</h3>
             <h5>Register with us for future convenience</h5>
-            <form action="">
+            <form action="#">
                 <div><input type="radio">checkout as guest</div>
                 <div><input type="radio">register</div>
             </form>
@@ -360,15 +361,18 @@
         <figure class="section-left">
             <img src="images/foto.png" alt="foto">
             <div class="burhan-text">
-                <figcaption>
-                    <h4>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam
-                        condimentum mattis neque sed pretium”</h4>
-                    <h5>Bin Burhan</h5>
-                    <h6>Dhaka, Bd</h6>
-                    <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
-                    <a href="#"> <img src="images/active_link.png" alt="link"></a>
-                    <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
-                </figcaption>
+                <figure>
+                    <figcaption>
+                        <h4>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a.
+                            Aliquam
+                            condimentum mattis neque sed pretium”</h4>
+                        <h5>Bin Burhan</h5>
+                        <h6>Dhaka, Bd</h6>
+                        <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
+                        <a href="#"> <img src="images/active_link.png" alt="link"></a>
+                        <a href="#"> <img src="images/unactive_link.png" alt="link"></a>
+                    </figcaption>
+                </figure>
             </div>
         </figure>
         <img src="images/vert_line.png" alt="line">
@@ -455,10 +459,7 @@
 
     <div class="footer-bottom">
         <div class="container footer-bottom-flex">
-            <div class="copy">
-                <h6 id="year"></h6>
-            </div>
-
+            <div class="copy"></div>
             <div class="social">
                 <a href="#"><i class=" fab fa-facebook-square soc_icons_style"></i></a>
                 <a href="#"><i class=" fab fa-twitter-square soc_icons_style"></i></a>
@@ -473,12 +474,20 @@
 
 </footer>
 <!--********************FOOTER END*********************************-->
-</body>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+        integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+        crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script>
-  window.onload = () => {
-    let copy = new Copyright();
-  }
-
+    window.onload = () => {
+        let copy = new Copyright();
+    }
 </script>
+</body>
+
 </html>
