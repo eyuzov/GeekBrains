@@ -52,9 +52,28 @@
             </form>
         </div>
         <div class="header-right">
-            <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
+            <div class="cart-hover">
+                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
+
+                <!--******************DROP DOWN CART START******************************-->
+
+                <div class="cart-dropdown">
+                    <div class="triangle2"></div>
+                    <div class="cart-flex">
+                        <div class="cart-total">
+                            <h4>TOTAL</h4>
+                            <h4 id="cart-sum">0</h4>
+                        </div>
+                        <button type="submit" class="checkout">Checkout</button>
+                        <button type="submit" class="to-cart">Go to cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--******************DROP DOWN CART END******************************-->
+
             <form action="#">
-                <button type="submit">My Account</button>
+                <button type="submit" class="account">My Account</button>
             </form>
         </div>
     </div>
@@ -379,10 +398,6 @@
                     <label class="XXL"><input type="checkbox"> XXL</label>
                 </form>
             </div>
-            <!--<div class="catalog_top">-->
-            <!--<h4>pRICE</h4>-->
-            <!--<input type="range">-->
-            <!--</div>-->
             <div class="catalog_top">
                 <h4>pRICE</h4>
                 <div id="slider-range"></div>
@@ -415,7 +430,7 @@
                     </select>
                 </div>
             </div>
-            <div class="hover">
+            <div class="hover" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.00">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -423,10 +438,10 @@
                     </div>
                 </a>
                 <div class="add_flex">
-                    <a href="#" class="add">Add to Cart</a>
+                    <a href="#" class="add" data-id="1">Add to Cart</a>
                 </div>
             </div>
-            <div class="hover">
+            <div class="hover" data-id="2" data-name="Mango People T-shirt" data-img="images/10.png" data-price="52.00">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/10.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -434,7 +449,7 @@
                     </div>
                 </a>
                 <div class="add_flex">
-                    <a href="#" class="add">Add to Cart</a>
+                    <a href="#" class="add" data-id="2">Add to Cart</a>
                 </div>
             </div>
             <div class="hover">
@@ -699,25 +714,32 @@
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/buy.js"></script>
 <script>
-
-
-    $("#slider-range").slider({
-        range: true,
-        min: 0,
-        max: 500,
-        values: [52, 400],
-        slide: function (event, ui) {
-            $("#amount-start").val(`$ ${0 + ui.values[0]}`);
-            $("#amount-end").val(`$ ${0 + ui.values[1]}`);
-        }
-    });
-    $("#amount-start").val("$ " + $("#slider-range").slider("values", 0));
-    $("#amount-end").val("$ " + $("#slider-range").slider("values", 1));
-
-    window.onload = () => {
-        let copy = new Copyright();
+  $("#slider-range").slider({
+    range: true,
+    min: 0,
+    max: 500,
+    values: [52, 400],
+    slide: function (event, ui) {
+      $("#amount-start").val(`$ ${0 + ui.values[0]}`);
+      $("#amount-end").val(`$ ${0 + ui.values[1]}`);
     }
+  });
+  $("#amount-start").val("$ " + $("#slider-range").slider("values", 0));
+  $("#amount-end").val("$ " + $("#slider-range").slider("values", 1));
+
+  window.onload = () => {
+    let copy = new Copyright();
+    $('.add_flex').on('click', 'a', (e) => {
+
+      let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
+
+      let buy = new Buy($product);
+    });
+
+
+  }
 </script>
 </body>
 
