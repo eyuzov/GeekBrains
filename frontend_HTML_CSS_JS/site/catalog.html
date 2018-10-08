@@ -62,7 +62,7 @@
                     <div class="cart-flex">
                         <div class="cart-total">
                             <h4>TOTAL</h4>
-                            <h4 id="cart-sum">0</h4>
+                            <h4 id="cart-sum">$ 0</h4>
                         </div>
                         <button type="submit" class="checkout">Checkout</button>
                         <button type="submit" class="to-cart">Go to cart</button>
@@ -430,7 +430,7 @@
                     </select>
                 </div>
             </div>
-            <div class="hover" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.00">
+            <div class="hover" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.14">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -731,11 +731,13 @@
 
   window.onload = () => {
     let copy = new Copyright();
+    let $buy = new Buy();
     $('.add_flex').on('click', 'a', (e) => {
 
       let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
+      $product.draggable;
+      $buy._addProduct($product);
 
-      let buy = new Buy($product);
     });
 
 
