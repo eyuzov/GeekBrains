@@ -732,10 +732,11 @@
   window.onload = () => {
     let copy = new Copyright();
     let $buy = new Buy();
+    $('.hover').draggable({ revert: true });
     $('.add_flex').on('click', 'a', (e) => {
 
       let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
-      $product.draggable;
+
       $buy._addProduct($product);
 
     });
