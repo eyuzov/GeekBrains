@@ -352,7 +352,7 @@
                         <div class="prod-desc">
                             <h3>Mango People T-shirt</h3>
                             <p>Color: <span>Red</span><br>
-                                Size: <span>Xll</span></p>
+                                Size: <span>XXl</span></p>
                         </div>
                     </a>
                 </div>
@@ -576,9 +576,11 @@
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/cart.js"></script>
 <script>
     window.onload = () => {
         let copy = new Copyright();
+        let cart = new Cart();
         $('.proceed,.checkout').on('click', () => {
             location.href = 'checkout.html';
         });

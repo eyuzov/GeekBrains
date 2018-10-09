@@ -1,6 +1,5 @@
 class Buy {
-  constructor(/*product,*/ container = '.cart-flex') {
-    // this.product = product;
+  constructor(container = '.cart-flex') {
     this.container = container;
     this.productArray = [];
     this.amount = 0;
@@ -37,11 +36,17 @@ class Buy {
     } else {
       let cartItem = {
         id: +$(product).data('id'),
-        img: $(product).data('img'),
+        src: $(product).data('img'),
         name: $(product).data('name'),
+        color: 'Red',
+        size: 'XXL',
         price: parseFloat($(product).data('price')),
-        quantity: 1
+        quantity: 1,
+        ship: 0
       };
+
+      sessionStorage.setItem('cart', JSON.stringify(cartItem));
+
       this.amount += cartItem.price;
       this.productArray.push(cartItem);
       this._render(this.container, cartItem);
@@ -69,7 +74,7 @@ class Buy {
       class: 'item-img'
     });
     let $itemImg = $(`<img/>`, {
-      src: product.img
+      src: product.src
     });
 
     let $itemDesc = $(`<div/>`, {
