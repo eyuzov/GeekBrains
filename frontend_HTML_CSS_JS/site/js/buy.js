@@ -55,7 +55,7 @@ class Buy {
   }
 
   _renderCart(amount) {
-    $('#cart-sum').text(`$ ${amount.toFixed(2)}`);
+    $('#cart-sum').text(`$${amount.toFixed(2)}`);
   }
 
   _render(container, product) {
@@ -80,7 +80,7 @@ class Buy {
     });
     let $itemDescSpan = $('<span/>', {
       class: 'span',
-      text: `${product.quantity} x ${product.price}`
+      text: `${product.quantity} x $${product.price}`
     });
 
     let $itemDel = $(`<div/>`, {

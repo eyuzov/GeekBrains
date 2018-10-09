@@ -62,7 +62,7 @@
                     <div class="cart-flex">
                         <div class="cart-total">
                             <h4>TOTAL</h4>
-                            <h4>$500.00</h4>
+                            <h4>$0.00</h4>
                         </div>
                         <button type="submit" class="checkout">Checkout</button>
                         <button type="submit" class="to-cart">Go to cart</button>
@@ -579,7 +579,7 @@
 <script>
     window.onload = () => {
         let copy = new Copyright();
-        $('.proceed').on('click', () => {
+        $('.proceed,.checkout').on('click', () => {
             location.href = 'checkout.html';
         });
     }

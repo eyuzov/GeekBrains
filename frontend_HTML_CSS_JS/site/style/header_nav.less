@@ -188,11 +188,11 @@
   display: flex;
 }
 
-/*******************DROP DOWN CART START*******************************/
+  /*******************DROP DOWN CART START*******************************/
 
 .cart-dropdown {
   border: 1px solid #e8e8e8;
-  display: flex;
+  display: none;
   width: 262px;
   position: absolute;
   top: 46px;
@@ -294,6 +294,10 @@
     text-transform: uppercase;
     color: #c0c0c0;
     margin-left: 10px;
+    & :hover{
+      color: red;
+      cursor: pointer;
+    }
   }
 
 }

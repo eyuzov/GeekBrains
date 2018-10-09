@@ -62,7 +62,7 @@
                     <div class="cart-flex">
                         <div class="cart-total">
                             <h4>TOTAL</h4>
-                            <h4 id="cart-sum">$ 0</h4>
+                            <h4 id="cart-sum">$0.00</h4>
                         </div>
                         <button type="submit" class="checkout">Checkout</button>
                         <button type="submit" class="to-cart">Go to cart</button>
@@ -434,7 +434,7 @@
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
-                        <h4>$52.00</h4>
+                        <h4>$52.14</h4>
                     </div>
                 </a>
                 <div class="add_flex">
@@ -730,9 +730,28 @@
   $("#amount-end").val("$ " + $("#slider-range").slider("values", 1));
 
   window.onload = () => {
-    let copy = new Copyright();
+    let $copy = new Copyright();
     let $buy = new Buy();
-    $('.hover').draggable({ revert: true });
+
+    $('.hover').draggable({revert: true, opacity: 0.5, helper: "clone"});
+
+    $('.cart-hover').droppable({
+      accept: $('.hover'),
+      classes: {
+        "ui-droppable-hover": "ui-state-hover"
+      },
+      drop: (event, ui) => {
+        $buy._addProduct(ui.draggable);
+      }
+    });
+
+    $('.checkout').on('click', () => {
+      location.href = 'checkout.html';
+    });
+    $('.to-cart').on('click', () => {
+      location.href = 'shopping_cart.html';
+    });
+
     $('.add_flex').on('click', 'a', (e) => {
 
       let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
