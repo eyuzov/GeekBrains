@@ -45,13 +45,14 @@ class Buy {
         ship: 0
       };
 
-      sessionStorage.setItem('cart', JSON.stringify(cartItem));
-
       this.amount += cartItem.price;
       this.productArray.push(cartItem);
+
       this._render(this.container, cartItem);
     }
     this._renderCart(this.amount);
+
+    sessionStorage.setItem('cart', JSON.stringify(this.productArray));
   }
 
   _updateCart(product) {
