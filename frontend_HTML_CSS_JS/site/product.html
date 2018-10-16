@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>Product</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style_product.css">
@@ -612,13 +612,9 @@
 <script src="js/main.js"></script>
 <script>
     window.onload = () => {
-        let copy = new Copyright();
-      $('.checkout').on('click', () => {
-        location.href = 'checkout.html';
-      });
-      $('.to-cart').on('click', () => {
-        location.href = 'shopping_cart.html';
-      });
+      let copy = new Copyright();
+      let cart = new Cart();
+      let init = new Init();
     }
 </script>
 </body>

@@ -101,7 +101,12 @@ gulp.task('pug:watch', () => {
     done();
   }));
 });
-
+gulp.task('json:watch', () => {
+  return gulp.watch(paths.devJson, gulp.series('copyJson', (done) => {
+    bs.reload();
+    done();
+  }));
+});
 gulp.task('minImgs', () => {
   return gulp.src(paths.devImgs)
     .pipe(imagemin())
@@ -114,5 +119,5 @@ gulp.task('copyJson', () => {
 });
 
 
-gulp.task('default', gulp.series('clean', 'minImgs', gulp.parallel('html', 'less', 'js:es6', 'js:babel', 'pug',
-  'less:watch', 'html:watch', 'js:watch', 'pug:watch', 'copyJson', 'server')));
+gulp.task('default', gulp.series('clean', 'minImgs', 'less', gulp.parallel('html', 'js:es6', 'js:babel', 'pug',
+  'less:watch', 'html:watch', 'js:watch', 'pug:watch','json:watch', 'copyJson', 'server')));

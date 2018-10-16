@@ -713,51 +713,23 @@
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
-<script src="js/buy.js"></script>
+<!--<script src="js/buy.js"></script>-->
 <script>
-  $("#slider-range").slider({
-    range: true,
-    min: 0,
-    max: 500,
-    values: [52, 400],
-    slide: function (event, ui) {
-      $("#amount-start").val(`$ ${0 + ui.values[0]}`);
-      $("#amount-end").val(`$ ${0 + ui.values[1]}`);
-    }
-  });
-  $("#amount-start").val("$ " + $("#slider-range").slider("values", 0));
-  $("#amount-end").val("$ " + $("#slider-range").slider("values", 1));
+
 
   window.onload = () => {
-    let $copy = new Copyright();
-    let $buy = new Buy();
 
-    $('.hover').draggable({revert: true, opacity: 0.5, helper: "clone"});
 
-    $('.cart-hover').droppable({
-      accept: $('.hover'),
-      classes: {
-        "ui-droppable-hover": "ui-state-hover"
-      },
-      drop: (event, ui) => {
-        $buy._addProduct(ui.draggable);
-      }
-    });
+    let $init = new Init();
 
-    $('.checkout').on('click', () => {
-      location.href = 'checkout.html';
-    });
-    $('.to-cart').on('click', () => {
-      location.href = 'shopping_cart.html';
-    });
 
-    $('.add_flex').on('click', 'a', (e) => {
-
-      let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
-
-      $buy._addProduct($product);
-
-    });
+    // $('.add_flex').on('click', 'a', (e) => {
+    //
+    //   let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
+    //
+    //   $buy._addProduct($product);
+    //
+    // });
 
 
   }

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style_cart.css">
@@ -53,7 +53,7 @@
         </div>
         <div class="header-right">
             <div class="cart-hover">
-                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart" ></a>
+                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
 
@@ -329,8 +329,6 @@
 <!--********************SECTION END*********************************-->
 
 
-
-
 <div class="container">
 
     <!--********************TABLE SECTION START*********************************-->
@@ -577,15 +575,12 @@
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
-<script src="js/cart.js"></script>
 <script>
-    window.onload = () => {
-        let copy = new Copyright();
-        let cart = new Cart();
-        $('.proceed,.checkout').on('click', () => {
-            location.href = 'checkout.html';
-        });
-    }
+  window.onload = () => {
+    let copy = new Copyright();
+    let cart = new Cart();
+    let init = new Init();
+  }
 </script>
 </body>
 

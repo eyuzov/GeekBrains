@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/checkout.css">
@@ -53,7 +53,7 @@
         </div>
         <div class="header-right">
             <div class="cart-hover">
-                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart" ></a>
+                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
 
@@ -502,12 +502,10 @@
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 <script>
-    window.onload = () => {
-        let copy = new Copyright();
-      $('.to-cart').on('click', () => {
-        location.href = 'shopping_cart.html';
-      });
-    }
+  window.onload = () => {
+    let copy = new Copyright();
+    let init = new Init();
+  }
 </script>
 </body>
 
