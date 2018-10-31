@@ -52,7 +52,7 @@
             </form>
         </div>
         <div class="header-right">
-            <div class="cart-hover">
+            <div class="cart-hover" id="cart-hover">
                 <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
@@ -429,7 +429,7 @@
                     </select>
                 </div>
             </div>
-            <div class="hover" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.14">
+            <div class="hover" id="test" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.14">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -713,12 +713,10 @@
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
-<!--<script src="js/buy.js"></script>-->
 <script>
 
 
   window.onload = () => {
-
 
     let $init = new Init();
 
