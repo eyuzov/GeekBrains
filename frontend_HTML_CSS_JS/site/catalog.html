@@ -377,11 +377,12 @@
 
 
     <div class="catalog">
-
-        <div class="catalog_bottom_flex">
+        <!--*******************SORTING START*******************************-->
+        <div class="catalog-filter">
             <div class="catalog_top">
                 <h4>Trending now</h4>
-                <a href="#">Bohemian</a> | <a href="#">Floral</a> | <a href="#">Lace</a> <br><a href="#">Floral</a> | <a
+                <a href="#">Bohemian</a> | <a href="#">Floral</a> | <a href="#">Lace</a> <br><a href="#">Floral</a>
+                | <a
                     href="#">Lace</a> | <a href="#">Bohemian</a>
             </div>
             <div class="catalog_top">
@@ -429,7 +430,11 @@
                     </select>
                 </div>
             </div>
-            <div class="hover" id="test" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.14">
+        </div>
+        <!--*******************SORTING END*******************************-->
+        <!--*******************CATALOG START*******************************-->
+        <div class="catalog-items">
+            <div class="hover" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.14">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -451,7 +456,7 @@
                     <a href="#" class="add" data-id="2">Add to Cart</a>
                 </div>
             </div>
-            <div class="hover">
+            <div class="hover" data-id="3" data-name="Mango People T-shirt" data-img="images/3.png" data-price="52.00">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/3.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -459,10 +464,10 @@
                     </div>
                 </a>
                 <div class="add_flex">
-                    <a href="#" class="add">Add to Cart</a>
+                    <a href="#" class="add" data-id="3">Add to Cart</a>
                 </div>
             </div>
-            <div class="hover">
+            <div class="hover" data-id="4" data-name="Mango People T-shirt" data-img="images/11.png" data-price="52.00">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/11.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -470,10 +475,10 @@
                     </div>
                 </a>
                 <div class="add_flex">
-                    <a href="#" class="add">Add to Cart</a>
+                    <a href="#" class="add" data-id="4">Add to Cart</a>
                 </div>
             </div>
-            <div class="hover">
+            <div class="hover" data-id="5" data-name="Mango People T-shirt" data-img="images/8.png" data-price="52.00">
                 <a href="product.html">
                     <div class="catalog_item"><img src="images/8.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -481,10 +486,10 @@
                     </div>
                 </a>
                 <div class="add_flex">
-                    <a href="#" class="add">Add to Cart</a>
+                    <a href="#" class="add" data-id="5">Add to Cart</a>
                 </div>
             </div>
-            <div class="hover">
+            <div class="hover" data-id="6" data-name="Mango People T-shirt" data-img="images/12.png" data-price="52.00">
                 <a href="product.html">
 
                     <div class="catalog_item"><img src="images/12.png" alt="product image">
@@ -493,7 +498,7 @@
                     </div>
                 </a>
                 <div class="add_flex">
-                    <a href="#" class="add">Add to Cart</a>
+                    <a href="#" class="add" data-id="6">Add to Cart</a>
                 </div>
             </div>
             <div class="hover">
@@ -529,8 +534,19 @@
                     <a href="#" class="add">Add to Cart</a>
                 </div>
             </div>
+            <div class="hover">
+                <a href="product.html">
+                    <div class="catalog_item"><img src="images/14.png" alt="product image">
+                        <h3>Mango People T-shirt</h3>
+                        <h4>$52.00</h4>
+                    </div>
+                </a>
+                <div class="add_flex">
+                    <a href="#" class="add">Add to Cart</a>
+                </div>
+            </div>
         </div>
-
+        <!--*******************CATALOG END*******************************-->
         <div class="pages">
 
             <a href="#">&lt; </a>
@@ -542,13 +558,11 @@
             <a href="#">6.....20 </a>
             <a href="#">&gt;</a>
         </div>
-
         <div class="all">
             <form action="#">
                 <button type="submit">View All</button>
             </form>
         </div>
-
     </div>
 
 

@@ -18,6 +18,7 @@ class Buy {
         this.addProduct(ui.draggable);
       }
     });
+
     $('.add_flex').on('click', 'a', (e) => {
 
       let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
