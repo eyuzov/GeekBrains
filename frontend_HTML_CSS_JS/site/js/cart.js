@@ -9,13 +9,25 @@ class Cart {
     this._init(this.source);
   }
 
-  _init(source) {
+  _clearCart(){
+    for (let i=0; i<=this.cartArray.length; i++){
+      this.cartArray.shift();
+      sessionStorage.clear();
+      location.reload();
+    }
+  };
 
+  _init(source) {
+    $('#clear').click(()=>{
+      this._clearCart();
+    });
+    $('#continue').click(()=>{
+      location.href = 'catalog.html';
+    });
     if (sessionStorage.length > 0) {
       let $restoredSession = JSON.parse(sessionStorage.getItem('cart'));
       for (let item of $restoredSession) {
         this.cartArray.push(item);
-        console.log(this.cartArray);
       }
     }
 
@@ -148,7 +160,6 @@ class Cart {
     $(this.container).append($row);
     this.total += product.price * product.quantity;
     $('.all-total').html(`$ ${this.total.toFixed(2)}`);
-    console.log(this.total);
   }
 
 }

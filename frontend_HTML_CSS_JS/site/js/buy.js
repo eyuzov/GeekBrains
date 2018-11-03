@@ -3,6 +3,28 @@ class Buy {
     this.container = container;
     this.productArray = [];
     this.amount = 0;
+    this._init();
+  }
+
+  _init() {
+    $('.hover').draggable({revert: true, opacity: 0.5});
+
+    $('.cart-hover').droppable({
+      accept: $('.hover'),
+      classes: {
+        "ui-droppable-hover": "ui-state-hover"
+      },
+      drop: (event, ui) => {
+        this.addProduct(ui.draggable);
+      }
+    });
+    $('.add_flex').on('click', 'a', (e) => {
+
+      let $product = $(`.hover[data-id=${e.target.dataset.id}]`);
+
+      this.addProduct($product);
+
+    });
   }
 
   _remove(item) {
@@ -22,10 +44,9 @@ class Buy {
     this._renderCart(this.amount);
 
 
-
   }
 
-  _addProduct(product) {
+  addProduct(product) {
 
     let productId = +$(product).data('id');
     let find = this.productArray.find(productArr => productArr.id === productId);

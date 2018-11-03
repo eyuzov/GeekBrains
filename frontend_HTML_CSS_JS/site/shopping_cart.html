@@ -405,8 +405,8 @@
     <!--*********************MAIN SECTION AFTER TABLE START*********************************-->
 
     <div class="buttons">
-        <button class="btn">cLEAR SHOPPING CART</button>
-        <button class="btn">cONTINUE sHOPPING</button>
+        <button class="btn" id="clear">cLEAR SHOPPING CART</button>
+        <button class="btn" id="continue">cONTINUE sHOPPING</button>
     </div>
 
 
@@ -574,11 +574,14 @@
         src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
+<script src="js/copy.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/buy.js"></script>
+<script src="js/feedback.js"></script>
 <script src="js/main.js"></script>
 <script>
   window.onload = () => {
-    let copy = new Copyright();
-    let cart = new Cart();
     let init = new Init();
   }
 </script>

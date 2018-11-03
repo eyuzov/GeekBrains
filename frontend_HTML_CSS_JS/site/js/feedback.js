@@ -9,8 +9,8 @@ class Feedback {
   }
 
   _init(source) {
-    $('#submit').click(() => {
-      feed._createNewFeedback();
+    $('#submit').click(()=>{
+      this.createNewFeedback();
     });
     fetch(source)
       .then(result => result.json())
@@ -27,7 +27,7 @@ class Feedback {
       })
   }
 
-  _createNewFeedback() {
+  createNewFeedback() {
     let $fullDate = new Date();
     let $date = `${$fullDate.getHours()}:${$fullDate.getMinutes()}:${$fullDate.getSeconds()} ${$fullDate.getDate()}/${$fullDate.getMonth() + 1}/${$fullDate.getFullYear()}`;
     let $newItem = {
