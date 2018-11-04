@@ -26,6 +26,16 @@ class Buy {
       this.addProduct($product);
 
     });
+
+    //***************BUY FROM PRODUCT PAGE***********************
+
+    $('.add_to_cart').on('click', 'button', (e) => {
+
+      let $product = $(`.item_descr[data-id=${e.target.dataset.id}]`);
+
+      this.addProduct($product);
+
+    });
   }
 
   _remove(item) {
