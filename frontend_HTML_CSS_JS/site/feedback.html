@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>Feedback</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/feedback.css">
@@ -87,8 +87,8 @@
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="catalog.html">Man</a>
-                <div class="mega flex">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle3"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -131,8 +131,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Women</a>
-                <div class="mega flex1">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle4"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -175,8 +175,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Accoseriese</a>
-                <div class="mega flex2">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle5"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -219,8 +219,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Featured</a>
-                <div class="mega flex3">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle6"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -263,8 +263,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Hot Deals</a>
-                <div class="mega flex4">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle7"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -312,7 +312,7 @@
 
 <!--********************NAV END*********************************-->
 
-<!--********************SECTION START*********************************-->
+<!--********************SECTION breadcrumbs START*********************************-->
 
 <nav>
     <div class="before_main">
@@ -326,53 +326,27 @@
         </div>
     </div>
 </nav>
-<!--********************SECTION END*********************************-->
+<!--********************SECTION breadcrumbs END*********************************-->
 
 
 <div class="container">
 
     <div class="feedback-flex">
-        <div class="feedback-item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam dolore doloremque dolorum
-            eligendi exercitationem maiores molestiae odio placeat quae qui quibusdam quos rem repudiandae, vel velit
-            vero
-            voluptates.
-        </div>
-        <div class="feedback-item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam dolore doloremque dolorum
-            eligendi exercitationem maiores molestiae odio placeat quae qui quibusdam quos rem repudiandae, vel velit
-            vero
-            voluptates.
-        </div>
-        <div class="feedback-item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam dolore doloremque dolorum
-            eligendi exercitationem maiores molestiae odio placeat quae qui quibusdam quos rem repudiandae, vel velit
-            vero
-            voluptates.
-        </div>
-        <div class="feedback-item">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam dolore doloremque dolorum
-            eligendi exercitationem maiores molestiae odio placeat quae qui quibusdam quos rem repudiandae, vel velit
-            vero
-            voluptates.
-        </div>
-        <div class="feedback-item not-accepted">
-            <div class="text">
-                <p class="author">Ivan<span class="date">12:00:00 11/10/2018</span></p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad aperiam dolore doloremque
-                    dolorum
-                    eligendi exercitationem maiores molestiae odio placeat quae qui quibusdam quos rem repudiandae, vel
-                    velit
-                    vero
-                    voluptates.</p>
-            </div>
-            <i class="fas fa-check"></i>
-        </div>
+
     </div>
 
+    <div class="addFeedback">
+        <form action="#" id="form">
+            <h3>Your Name</h3>
+            <input type="text" id="name">
+            <h3>Your Feedback</h3>
+            <textarea id="feedback-text" cols="30" rows="10"></textarea>
+            <button type="submit" id="submit">ADD</button>
+        </form>
+    </div>
 </div>
 
-
+<!--********************SECTION START*********************************-->
 <div class="section">
     <div class="container section-flex">
         <figure class="section-left">
@@ -499,15 +473,15 @@
         src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<script src="js/copy.js"></script>
 <script src="js/cart.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/buy.js"></script>
 <script src="js/feedback.js"></script>
+<script src="js/main.js"></script>
 <script>
   window.onload = () => {
-    $('.proceed,.checkout').on('click', () => {
-      location.href = 'checkout.html';
-    });
-    let feed = new Feedback('feedback.json');
+    let init = new Init();
   }
 </script>
 </body>

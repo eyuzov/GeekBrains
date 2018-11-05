@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>Shopping Cart</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style_cart.css">
@@ -53,7 +53,7 @@
         </div>
         <div class="header-right">
             <div class="cart-hover">
-                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart" ></a>
+                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
 
@@ -87,8 +87,8 @@
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="catalog.html">Man</a>
-                <div class="mega flex">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle3"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -131,8 +131,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Women</a>
-                <div class="mega flex1">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle4"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -175,8 +175,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Accoseriese</a>
-                <div class="mega flex2">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle5"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -219,8 +219,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Featured</a>
-                <div class="mega flex3">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle6"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -263,8 +263,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Hot Deals</a>
-                <div class="mega flex4">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle7"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -327,8 +327,6 @@
     </div>
 </nav>
 <!--********************SECTION END*********************************-->
-
-
 
 
 <div class="container">
@@ -407,8 +405,8 @@
     <!--*********************MAIN SECTION AFTER TABLE START*********************************-->
 
     <div class="buttons">
-        <button class="btn">cLEAR SHOPPING CART</button>
-        <button class="btn">cONTINUE sHOPPING</button>
+        <button class="btn" id="clear">cLEAR SHOPPING CART</button>
+        <button class="btn" id="continue">cONTINUE sHOPPING</button>
     </div>
 
 
@@ -434,7 +432,7 @@
                 <button class="coupon">Apply coupon</button>
             </form>
         </div>
-        <div class="order">
+        <div class="order gray">
             <h6>Sub total <span class="all-total">$ 0</span></h6>
             <h2>GRAND TOTAL <span class="all-total"> $ 0</span></h2>
             <div class="center">
@@ -576,16 +574,16 @@
         src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+<script src="js/copy.js"></script>
 <script src="js/cart.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/buy.js"></script>
+<script src="js/feedback.js"></script>
+<script src="js/main.js"></script>
 <script>
-    window.onload = () => {
-        let copy = new Copyright();
-        let cart = new Cart();
-        $('.proceed,.checkout').on('click', () => {
-            location.href = 'checkout.html';
-        });
-    }
+  window.onload = () => {
+    let init = new Init();
+  }
 </script>
 </body>
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>Product</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
           integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="style/style_product.css">
@@ -53,7 +53,7 @@
         </div>
         <div class="header-right">
             <div class="cart-hover">
-                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart" ></a>
+                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
 
@@ -86,8 +86,8 @@
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="catalog.html">Man</a>
-                <div class="mega flex">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle3"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -130,8 +130,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Women</a>
-                <div class="mega flex1">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle4"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -174,8 +174,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Accoseriese</a>
-                <div class="mega flex2">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle5"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -218,8 +218,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Featured</a>
-                <div class="mega flex3">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle6"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -262,8 +262,8 @@
                 </div>
             </li>
             <li><a href="catalog.html">Hot Deals</a>
-                <div class="mega flex4">
-                    <div class="triangle"></div>
+                <div class="mega">
+                    <div class="triangle7"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
@@ -348,7 +348,8 @@
 <div class="container">
 
     <div class="to_buy">
-        <div class="item_descr">
+        <div class="item_descr" data-id="100" data-name="Moschino Cheap And Chic"
+             data-img="images/lady.png" data-price="561">
             <h4>WOMEN COLLECTION</h4>
             <div class="marked_line">
                 <div class="marked_line_pink">
@@ -376,7 +377,7 @@
                     <select name="sps_params" class="sps_params">
                         <option>Red</option>
                         <option>Green</option>
-                        <option>Blue</option>
+                        <option selected>Blue</option>
                         <option>Brown</option>
                         <option>Black</option>
                         <option>Orange</option>
@@ -389,7 +390,7 @@
                     <select name="sps_params" class="sps_params">
                         <option>XXS</option>
                         <option>XS</option>
-                        <option>S</option>
+                        <option selected>S</option>
                         <option>M</option>
                         <option>L</option>
                         <option>XL</option>
@@ -399,7 +400,7 @@
                 <div class="params">
                     <p class="choose_params">QUANTITY</p>
                     <select name="sps_params" class="sps_params">
-                        <option>1</option>
+                        <option selected>1</option>
                         <option>2</option>
                         <option>3</option>
                         <option>4</option>
@@ -410,8 +411,9 @@
             </div>
             <div class="add_to_cart">
                 <form action="#">
-                    <button type="submit"><img src="images/red_cart.svg" alt="cart" id="frst">
-                        <img src="images/white_cart.svg" alt="cart" id="scnd">Add to Cart</button>
+                    <button type="submit" data-id="100"><img src="images/red_cart.svg" alt="cart" id="frst">
+                        <img src="images/white_cart.svg" alt="cart" id="scnd">Add to Cart
+                    </button>
                 </form>
             </div>
 
@@ -451,6 +453,19 @@
                 <div class="one ">
                     <div class="models_bg third"></div>
                     <h3>AGNES TOP</h3>
+                    <h4>$52.00</h4>
+                </div>
+            </a>
+
+            <div class="add_flex">
+                <a href="#" class="add">Add to Cart</a>
+            </div>
+        </div>
+        <div class="hover">
+            <a href="#">
+                <div class="one">
+                    <img src="images/fourth_model.png" alt="model" class="models_bg">
+                    <h3>SYLVA SWEATER</h3>
                     <h4>$52.00</h4>
                 </div>
             </a>
@@ -609,17 +624,16 @@
         src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
         integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
         crossorigin="anonymous"></script>
+<script src="js/copy.js"></script>
+<script src="js/cart.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/buy.js"></script>
+<script src="js/feedback.js"></script>
 <script src="js/main.js"></script>
 <script>
-    window.onload = () => {
-        let copy = new Copyright();
-      $('.checkout').on('click', () => {
-        location.href = 'checkout.html';
-      });
-      $('.to-cart').on('click', () => {
-        location.href = 'shopping_cart.html';
-      });
-    }
+  window.onload = () => {
+    let init = new Init();
+  }
 </script>
 </body>
 
