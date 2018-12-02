@@ -2,7 +2,7 @@
 $text = "minimalistica";
 $title = "<title>$text</title>";
 $h1 = "<h1>$text</h1>";
-$year = "2018";
+$year = date("Y");
 ?>
 
 

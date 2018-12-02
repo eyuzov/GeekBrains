@@ -3,6 +3,18 @@ $text = "minimalistica";
 $title = "<title>$text</title>";
 $h1 = "<h1>$text</h1>";
 $year = "2018";
+$menuArray = [
+    "first",
+    "second",
+    "third",
+    "fourth"
+];
+$menu ="";
+$menu .= "<ul id=\"menu\">";
+for($i = 0; $i<count($menuArray);$i++){
+    $menu .="<li><a href=\"#\">".$menuArray[$i]."</a></li>";
+}
+$menu .= "</ul>";
 ?>
 
 
@@ -11,18 +23,18 @@ $year = "2018";
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	<meta name="author" content="Luka Cvrk (www.solucija.com)" />
 	<link rel="stylesheet" href="css/main.css" type="text/css" />
-     <?php echo $title; ?>
+     <?=$title; ?>
 </head>
 <body>
 	<div id="content">
 
-        <?php echo $h1; ?>
-		
-		<ul id="menu">
-			<li><a href="#">home</a></li>
-			<li><a href="#">archive</a></li>
-			<li><a href="#">contact</a></li>
-		</ul>
+        <?=$h1; ?>
+        <?=$menu; ?>
+<!--		<ul id="menu">-->
+<!--			<li><a href="#">home</a></li>-->
+<!--			<li><a href="#">archive</a></li>-->
+<!--			<li><a href="#">contact</a></li>-->
+<!--		</ul>-->
 	
 		<div class="post">
 			<div class="details">
