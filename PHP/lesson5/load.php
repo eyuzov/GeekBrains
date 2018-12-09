@@ -15,7 +15,6 @@ if (!$conn) {
 $insert = "INSERT INTO `images` (`name`, `path_small`, `path_big`, `size`) 
 VALUES ('$fileName','$pathSmall','$pathBig',$fileSize)";
 
-
 if (!mysqli_query($conn, $insert)) {
     die("Error load file!");
 }

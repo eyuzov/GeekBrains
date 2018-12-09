@@ -60,7 +60,6 @@ $content .= '</div>';
 </form>
 <script>
   let a = document.getElementsByClassName("content");
-  console.log(a);
   a[0].addEventListener('click', (e) => {
     if (e.target.tagName = 'IMG') {
       location.reload()
