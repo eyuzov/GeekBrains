@@ -22,7 +22,7 @@ class Cart {
       this._clearCart();
     });
     $('#continue').click(()=>{
-      location.href = 'catalog.html';
+      location.href = 'catalog.php';
     });
     if (sessionStorage.length > 0) {
       let $restoredSession = JSON.parse(sessionStorage.getItem('cart'));

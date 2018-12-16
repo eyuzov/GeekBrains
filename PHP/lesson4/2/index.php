@@ -3,7 +3,7 @@ $dir = "photo/small/";
 $files = scandir($dir);
 $content = "<div class='content'>";
 for ($i = 2; $i < count($files); $i++) {
-    $img = "<div><a href=load.php?file=$files[$i] target='_blank'>
+    $img = "<div><a href=insert.php?file=$files[$i] target='_blank'>
     <img src=$dir$files[$i] alt='image' class='img'></a></div>";
 
     $content .= $img;

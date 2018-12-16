@@ -14,7 +14,7 @@
 <header class="header">
     <div class="container header-flex">
         <div class="header-left">
-            <a href="index.html" class="link-logo">
+            <a href="index.php" class="link-logo">
                 <img src="images/logo.png" alt="logo"><h5>BRAN<span>D</span></h5>
             </a>
             <div class="browse"><a href="#" class="browse_menu">Browse <i class="fas fa-sort-down"></i></a>
@@ -23,24 +23,24 @@
                     <div class="mega_flex1">
                         <h3>Women</h3>
                         <ul class="mega_list1">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Denim</a></li>
-                            <li><a href="catalog.html">Leggings/Pants</a></li>
-                            <li><a href="catalog.html">Skirts/Shorts</a></li>
-                            <li><a href="catalog.html">Accessories </a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Denim</a></li>
+                            <li><a href="catalog.php">Leggings/Pants</a></li>
+                            <li><a href="catalog.php">Skirts/Shorts</a></li>
+                            <li><a href="catalog.php">Accessories </a></li>
                         </ul>
                         <h3>Man</h3>
                         <ul class="mega_list1">
-                            <li><a href="catalog.html">Tees/Tank tops</a></li>
-                            <li><a href="catalog.html">Shirts/Polos</a></li>
-                            <li><a href="catalog.html">Sweaters</a></li>
-                            <li><a href="catalog.html">Sweatshirts/Hoodies</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Jackets/vests</a></li>
+                            <li><a href="catalog.php">Tees/Tank tops</a></li>
+                            <li><a href="catalog.php">Shirts/Polos</a></li>
+                            <li><a href="catalog.php">Sweaters</a></li>
+                            <li><a href="catalog.php">Sweatshirts/Hoodies</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Jackets/vests</a></li>
                         </ul>
                     </div>
 
@@ -53,7 +53,7 @@
         </div>
         <div class="header-right">
             <div class="cart-hover">
-                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
+                <a href="shopping_cart.php"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
 
@@ -84,222 +84,222 @@
 <nav>
     <div class="container">
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalog.html">Man</a>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="catalog.php">Man</a>
                 <div class="mega">
                     <div class="triangle3"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Denim</a></li>
-                            <li><a href="catalog.html">Leggings/Pants</a></li>
-                            <li><a href="catalog.html">Skirts/Shorts</a></li>
-                            <li><a href="catalog.html">Accessories </a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Denim</a></li>
+                            <li><a href="catalog.php">Leggings/Pants</a></li>
+                            <li><a href="catalog.php">Skirts/Shorts</a></li>
+                            <li><a href="catalog.php">Accessories </a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <img src="images/sale.jpg" alt="super sale">
                     </div>
                 </div>
             </li>
-            <li><a href="catalog.html">Women</a>
+            <li><a href="catalog.php">Women</a>
                 <div class="mega">
                     <div class="triangle4"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Denim</a></li>
-                            <li><a href="catalog.html">Leggings/Pants</a></li>
-                            <li><a href="catalog.html">Skirts/Shorts</a></li>
-                            <li><a href="catalog.html">Accessories </a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Denim</a></li>
+                            <li><a href="catalog.php">Leggings/Pants</a></li>
+                            <li><a href="catalog.php">Skirts/Shorts</a></li>
+                            <li><a href="catalog.php">Accessories </a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <img src="images/sale.jpg" alt="super sale">
                     </div>
                 </div>
             </li>
-            <li><a href="catalog.html">Accoseriese</a>
+            <li><a href="catalog.php">Accoseriese</a>
                 <div class="mega">
                     <div class="triangle5"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Denim</a></li>
-                            <li><a href="catalog.html">Leggings/Pants</a></li>
-                            <li><a href="catalog.html">Skirts/Shorts</a></li>
-                            <li><a href="catalog.html">Accessories </a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Denim</a></li>
+                            <li><a href="catalog.php">Leggings/Pants</a></li>
+                            <li><a href="catalog.php">Skirts/Shorts</a></li>
+                            <li><a href="catalog.php">Accessories </a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <img src="images/sale.jpg" alt="super sale">
                     </div>
                 </div>
             </li>
-            <li><a href="catalog.html">Featured</a>
+            <li><a href="catalog.php">Featured</a>
                 <div class="mega">
                     <div class="triangle6"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Denim</a></li>
-                            <li><a href="catalog.html">Leggings/Pants</a></li>
-                            <li><a href="catalog.html">Skirts/Shorts</a></li>
-                            <li><a href="catalog.html">Accessories </a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Denim</a></li>
+                            <li><a href="catalog.php">Leggings/Pants</a></li>
+                            <li><a href="catalog.php">Skirts/Shorts</a></li>
+                            <li><a href="catalog.php">Accessories </a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <img src="images/sale.jpg" alt="super sale">
                     </div>
                 </div>
             </li>
-            <li><a href="catalog.html">Hot Deals</a>
+            <li><a href="catalog.php">Hot Deals</a>
                 <div class="mega">
                     <div class="triangle7"></div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
-                            <li><a href="catalog.html">Blazers</a></li>
-                            <li><a href="catalog.html">Denim</a></li>
-                            <li><a href="catalog.html">Leggings/Pants</a></li>
-                            <li><a href="catalog.html">Skirts/Shorts</a></li>
-                            <li><a href="catalog.html">Accessories </a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Blazers</a></li>
+                            <li><a href="catalog.php">Denim</a></li>
+                            <li><a href="catalog.php">Leggings/Pants</a></li>
+                            <li><a href="catalog.php">Skirts/Shorts</a></li>
+                            <li><a href="catalog.php">Accessories </a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
                         </ul>
                     </div>
                     <div class="mega_flex">
                         <h3>Women</h3>
                         <ul class="mega_list">
-                            <li><a href="catalog.html">Dresses</a></li>
-                            <li><a href="catalog.html">Tops</a></li>
-                            <li><a href="catalog.html">Sweaters/Knits</a></li>
-                            <li><a href="catalog.html">Jackets/Coats</a></li>
+                            <li><a href="catalog.php">Dresses</a></li>
+                            <li><a href="catalog.php">Tops</a></li>
+                            <li><a href="catalog.php">Sweaters/Knits</a></li>
+                            <li><a href="catalog.php">Jackets/Coats</a></li>
                         </ul>
                         <img src="images/sale.jpg" alt="super sale">
                     </div>
@@ -319,8 +319,8 @@
             <h3>product</h3>
 
             <ul class="breadcrumbs">
-                <li><a href="index.html" class="up_page">Home</a></li>
-                <li><a href="catalog.html" class="up_page">catalog</a></li>
+                <li><a href="index.php" class="up_page">Home</a></li>
+                <li><a href="catalog.php" class="up_page">catalog</a></li>
                 <li class="curr_page">product</li>
             </ul>
         </div>
@@ -560,7 +560,7 @@
                         </li>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Shop</a></li>
-                        <li><a href="feedback.html">About</a></li>
+                        <li><a href="feedback.php">About</a></li>
                         <li><a href="#">How It Works</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

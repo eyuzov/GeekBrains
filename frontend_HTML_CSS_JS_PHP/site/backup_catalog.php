@@ -14,7 +14,7 @@
 <header class="header">
     <div class="container header-flex">
         <div class="header-left">
-            <a href="index.html" class="link-logo">
+            <a href="index.php" class="link-logo">
                 <img src="images/logo.png" alt="logo"><h5>BRAN<span>D</span></h5>
             </a>
             <div class="browse"><a href="#" class="browse_menu">Browse <i class="fas fa-sort-down"></i></a>
@@ -53,7 +53,7 @@
         </div>
         <div class="header-right">
             <div class="cart-hover" id="cart-hover">
-                <a href="shopping_cart.html"><img src="images/cart.svg" alt="cart"></a>
+                <a href="shopping_cart.php"><img src="images/cart.svg" alt="cart"></a>
 
                 <!--******************DROP DOWN CART START******************************-->
 
@@ -85,7 +85,7 @@
 <nav>
     <div class="container">
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="#">Man</a>
                 <div class="mega">
                     <div class="triangle3"></div>
@@ -320,7 +320,7 @@
             <h3>catalog</h3>
 
             <ul class="breadcrumbs">
-                <li><a href="index.html" class="up_page">Home</a></li>
+                <li><a href="index.php" class="up_page">Home</a></li>
                 <li class="curr_page">catalog</li>
             </ul>
         </div>
@@ -435,7 +435,7 @@
         <!--*******************CATALOG START*******************************-->
         <div class="catalog-items">
             <div class="hover" data-id="1" data-name="Mango People T-shirt" data-img="images/9.png" data-price="52.14">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/9.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.14</h4>
@@ -446,7 +446,7 @@
                 </div>
             </div>
             <div class="hover" data-id="2" data-name="Mango People T-shirt" data-img="images/10.png" data-price="52.00">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/10.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -457,7 +457,7 @@
                 </div>
             </div>
             <div class="hover" data-id="3" data-name="Mango People T-shirt" data-img="images/3.png" data-price="52.00">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/3.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -468,7 +468,7 @@
                 </div>
             </div>
             <div class="hover" data-id="4" data-name="Mango People T-shirt" data-img="images/11.png" data-price="52.00">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/11.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -479,7 +479,7 @@
                 </div>
             </div>
             <div class="hover" data-id="5" data-name="Mango People T-shirt" data-img="images/8.png" data-price="52.00">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/8.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -490,7 +490,7 @@
                 </div>
             </div>
             <div class="hover" data-id="6" data-name="Mango People T-shirt" data-img="images/12.png" data-price="52.00">
-                <a href="product.html">
+                <a href="product.php">
 
                     <div class="catalog_item"><img src="images/12.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
@@ -502,7 +502,7 @@
                 </div>
             </div>
             <div class="hover">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/6.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -513,7 +513,7 @@
                 </div>
             </div>
             <div class="hover">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/13.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -524,7 +524,7 @@
                 </div>
             </div>
             <div class="hover">
-                <a href="product.html">
+                <a href="product.php">
                     <div class="catalog_item"><img src="images/14.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -535,7 +535,7 @@
                 </div>
             </div>
             <div class="hover">
-                <a href="product.html">
+                <a href="product.php?id=6">
                     <div class="catalog_item"><img src="images/14.png" alt="product image">
                         <h3>Mango People T-shirt</h3>
                         <h4>$52.00</h4>
@@ -662,7 +662,7 @@
                         </li>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Shop</a></li>
-                        <li><a href="feedback.html">About</a></li>
+                        <li><a href="feedback.php">About</a></li>
                         <li><a href="#">How It Works</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>

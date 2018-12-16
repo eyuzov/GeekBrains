@@ -11,5 +11,5 @@ include "server.php";
         <option value="/">/</option>
     </select>
     <input type="text" name="b">
-    <input type="submit" value="рассчитать"><?=$res;?>
+    <input type="submit" value="рассчитать"><?=$row;?>
 </form>

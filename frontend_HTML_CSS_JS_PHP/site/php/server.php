@@ -15,4 +15,4 @@ mysqli_query($conn, $sql);
 
 mysqli_close($conn);
 
-header("location: feedback.php");
+header("location: ../feedback.php");

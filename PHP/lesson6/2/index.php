@@ -8,5 +8,5 @@ include "server.php"
     <button name="operation" type="submit" value="-">-</button>
     <button name="operation" type="submit" value="*">*</button>
     <button name="operation" type="submit" value="/">/</button>
-    <input type="text" name="b"><?= $res; ?>
+    <input type="text" name="b"><?= $row; ?>
 </form>

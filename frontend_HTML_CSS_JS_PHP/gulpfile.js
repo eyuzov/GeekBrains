@@ -18,14 +18,16 @@ const paths = {
   devHtml: 'site/**/*.html',
   devLess: 'site/style/**/*.less',
   devJs: 'site/js/**/*.js',
-  devPhp: 'site/php/**/*.php',
+  devPhpConfig: 'site/php/**/*.php',
+  devPhp: 'site/*.php',
   devImgs: 'site/images/**/*.*',
   devPug: 'site/pug/**/*.pug',
 
   project: 'dist',
   projectCss: 'dist/style',
   projectJs: 'dist/js',
-  projectPhp: 'dist/php',
+  projectPhpConfig: 'dist/php',
+  projectPhp: 'dist',
   projectImgs: 'dist/images/',
   projectPug: 'dist/templates',
 };
@@ -117,6 +119,13 @@ gulp.task('php:watch', () => {
   }));
 });
 
+gulp.task('phpConfig:watch', () => {
+  return gulp.watch(paths.devPhpConfig, gulp.series('copyPhpConfig', (done) => {
+    bs.reload();
+    done();
+  }));
+});
+
 gulp.task('minImgs', () => {
   return gulp.src(paths.devImgs)
     .pipe(imagemin())
@@ -127,11 +136,15 @@ gulp.task('copyJson', () => {
   return gulp.src(paths.devJson)
     .pipe(gulp.dest(paths.project))
 });
+gulp.task('copyPhpConfig', () => {
+  return gulp.src(paths.devPhpConfig)
+    .pipe(gulp.dest(paths.projectPhpConfig))
+});
 gulp.task('copyPhp', () => {
   return gulp.src(paths.devPhp)
     .pipe(gulp.dest(paths.projectPhp))
 });
 
-
-gulp.task('default', gulp.series('clean', 'minImgs', 'less', gulp.parallel('html', 'js:es6', 'js:babel', 'pug',
-  'less:watch', 'html:watch', 'js:watch', 'pug:watch', 'json:watch', 'php:watch', 'copyJson', 'copyPhp', 'server')));
+gulp.task('default', gulp.series('clean', 'minImgs', 'less',
+          gulp.parallel(/*'html',*/ 'js:es6', 'js:babel', 'pug',  'less:watch', 'html:watch', 'js:watch',
+          'pug:watch', 'json:watch', 'php:watch', 'phpConfig:watch', 'copyJson', 'copyPhp', 'copyPhpConfig', 'server')));

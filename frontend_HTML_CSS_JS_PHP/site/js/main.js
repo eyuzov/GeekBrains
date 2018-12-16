@@ -12,10 +12,10 @@ class Init {
     let $feed = new Feedback('feedback.json');
 
     $('.proceed,.checkout').on('click', () => {
-      location.href = 'checkout.html';
+      location.href = 'checkout.php';
     });
     $('.to-cart').on('click', () => {
-      location.href = 'shopping_cart.html';
+      location.href = 'shopping_cart.php';
     });
 
   }
